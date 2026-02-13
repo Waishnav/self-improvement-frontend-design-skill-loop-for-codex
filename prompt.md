@@ -22,3 +22,5 @@ Each design should be creative and unique from all the others that you create.
 They should be hosted on /1, /2, /3, /4 and /5 respectively.
 
 Use the following port for the dev server: 4000
+
+Use your frontend design skill to make these designs exceptional.
