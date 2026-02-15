@@ -35,3 +35,22 @@ global-frontend-skill
 ## Keep / Drop
 
 [TODO]
+
+## Screenshots
+
+Responsive screenshots are stored under `screenshots/<route>/`.
+
+### Route /1
+- Not captured yet.
+
+### Route /2
+- Not captured yet.
+
+### Route /3
+- Not captured yet.
+
+### Route /4
+- Not captured yet.
+
+### Route /5
+- Not captured yet.
