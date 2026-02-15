@@ -10,26 +10,25 @@ This repository benchmarks and improves `frontend-design` skill quality for GPT 
 2. Use `prompt.md` as the single shared benchmark prompt.
 3. Work inside `experiments/<version>/` for all versioned changes.
 
-## Repository Structure
-
-- `prompt.md`: Canonical prompt used across experiments.
-- `experiments/`: Versioned experiment folders.
-- `experiments/version-1/skills/frontend-design/SKILL.md`: Current tuned skill under test.
-- `experiments/version-1/README.md`: What this version includes and expected outcomes.
-- `experiments/version-1/t4-canvas/`: App scaffold/output workspace for that version.
-
-## Agent Workflow (Minimal)
+## Experiment Invariants
 
 1. Do not modify `prompt.md` unless explicitly asked.
-2. For new iterations, create a new version folder (for example `experiments/v002-.../`) instead of overwriting prior versions.
-3. Keep each version self-contained:
-   - skill file,
-   - app/output workspace,
-   - short README describing what changed.
-4. Prefer comparable experiments: same prompt, same constraints, changed skill version.
+2. For new iterations, create a new `experiments/version-X/` folder; never overwrite old versions.
+3. Always run Codex from inside the active version folder while still using the shared root `prompt.md`.
+4. Keep each version self-contained:
+   - `.agents/skills/frontend-design/SKILL.md`
+   - `t4-canvas/` output workspace (fresh/isolated by default; no inherited implementation)
+   - `README.md` documenting hypotheses and changes
+   - `CRITQUES.md` comparing outputs against expected reference designs
+   - `screenshots/` with full-page captures for `/1` to `/5`
+5. Compare against visual targets before scoring:
+   - `research/targetted-designs/`
+   - `research/theo-screenshots-2k-clean/opus45_with_skill/`
+   - `research/theo-screenshots-2k-clean/opus_iterations/`
 
-## Conventions
+## Local Experiment Skill
 
-- Keep changes small and auditable.
-- Do not delete prior experiment versions.
-- Document the reason for each skill change in that version's README.
+Use `.agents/skills/frontend-design-improvements-loop/SKILL.md` for long-running iterative benchmark loops, mutation strategy, and headless `codex exec` command templates.
+
+Local skill path:
+- `.agents/skills/frontend-design-improvements-loop/SKILL.md`
