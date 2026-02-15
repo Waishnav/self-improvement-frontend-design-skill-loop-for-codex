@@ -4,9 +4,10 @@ This folder contains versioned `frontend-design` benchmark iterations using the 
 
 ## Important Notes
 
-- `version-3` is broken due to an incorrect self-improvement loop run.
-- `version-6` is broken due to an incorrect self-improvement loop run.
-- Ignore `version-3` and `version-6` when evaluating quality trends or selecting a best candidate.
+> [!WARNING]
+> Do not use `version-3` through `version-6` for quality comparisons or best-candidate selection.
+> Those runs are invalid due to an incorrect self-improvement-loop configuration that unintentionally reused `version-2` as an implementation baseline.
+> The issue came from automation setup and review gaps during early loop development.
 
 ## How The Loop Evolved
 
@@ -32,7 +33,7 @@ This folder contains versioned `frontend-design` benchmark iterations using the 
 5. Screenshot quality fixes:
    - Responsive captures now exist per route: `screenshots/<route>/{mobile,tablet,laptop}.png`.
    - Sticky/fixed header interference was mitigated during full-page capture.
-   - Legacy top-level route screenshots were replaced by symlinks to `laptop.png` for compatibility.
+   - Version READMEs now link/embed the actual responsive screenshot files directly for GitHub rendering.
 
 ## Current Recommended Workflow
 
