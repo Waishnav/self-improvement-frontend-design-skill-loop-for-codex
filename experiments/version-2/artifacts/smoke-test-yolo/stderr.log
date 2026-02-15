@@ -1,0 +1,5 @@
+2026-02-14T19:50:57.745044Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c50df-fb2f-7c61-b496-13044756affc
+2026-02-14T19:50:57.765938Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c5bb9-b6ab-74e0-92c4-a44f01e7ef1a
+2026-02-14T19:50:57.786882Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c5dad-3340-71e0-b1d1-81aa407ba6b6
+2026-02-14T19:50:57.807701Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c5daf-5c77-77e2-90e5-8e73b4d73a70
+2026-02-14T19:50:57.828661Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c5d37-9623-71d3-8804-d787ff883103

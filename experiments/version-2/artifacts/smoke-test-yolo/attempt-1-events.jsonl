@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"019c5db4-d3b9-7b90-aff2-46ef781d5def"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"YOLO_OK"}}
+{"type":"turn.completed","usage":{"input_tokens":9443,"cached_input_tokens":4480,"output_tokens":54}}
