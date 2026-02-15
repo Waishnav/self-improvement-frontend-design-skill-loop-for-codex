@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Design Improvements Loop"
+  short_description: "Runs iterative frontend benchmark loops overnight"
+  default_prompt: "Use $frontend-design-improvements-loop to run one full frontend skill benchmark iteration."
