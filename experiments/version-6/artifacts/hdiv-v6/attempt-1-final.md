@@ -1,0 +1,1 @@
+I’m doing a quick cleanup pass to remove unused Vite starter artifacts so the project only contains the new implementation.

@@ -1,0 +1,1 @@
+I’m writing the five route components now with distinct section graphs and interaction models, then I’ll tune global CSS animations/fonts and run a production build to verify everything compiles.

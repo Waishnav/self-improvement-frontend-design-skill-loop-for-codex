@@ -1,0 +1,1 @@
+I’m now writing all page components. Each route will have its own token palette, section architecture, and a real stateful control in the first fold plus another stateful module mid-page, so the concepts are visually and behaviorally distinct.

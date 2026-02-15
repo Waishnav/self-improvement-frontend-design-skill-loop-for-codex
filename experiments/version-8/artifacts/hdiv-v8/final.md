@@ -1,0 +1,1 @@
+Build is passing. I’m doing a quick cleanup of leftover Vite starter artifacts and updating app metadata so the project is tidy and focused on `T4 Canvas`.
