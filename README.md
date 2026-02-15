@@ -16,12 +16,16 @@ This repo treats frontend quality as an optimization loop:
 
 ## Why I built this
 
-After watching model comparisons (including Theo's frontend-model discussion), I wanted to test a specific idea:
+A couple of days ago, I watched Theo's video on which model performs best for frontend design:
 
-- A great skill is not automatically portable across model families.
-- Codex might need its own instruction tuning to reach comparable design quality.
+- Video: https://www.youtube.com/watch?v=f2FnYRP5kC4
+  [![Theo video: best model for frontend design](https://i.ytimg.com/vi/f2FnYRP5kC4/hqdefault.jpg)](https://www.youtube.com/watch?v=f2FnYRP5kC4)
 
-This became a focused benchmark to measure how much we can improve Codex output quality by tuning behavior through skills, constraints, and feedback loops.
+In that video, the benchmark paired GPT with the `frontend-design` skill written by Anthropic for Claude models. That made me question whether this is a fair portability benchmark across model families.
+
+My hypothesis was simple: Codex is highly instruction-sensitive. If we tune the skill language specifically for Codex, with clear constraints and quality signals, we should be able to push outputs much closer to Opus-level frontend quality.
+
+This repository is that experiment.
 
 ## Important clarification
 
