@@ -5,9 +5,9 @@ This folder contains versioned `frontend-design` benchmark iterations using the 
 ## Important Notes
 
 > [!WARNING]
-> Do not use `version-3` through `version-6` for quality comparisons or best-candidate selection.
-> Those runs are invalid due to an incorrect self-improvement-loop configuration that unintentionally reused `version-2` as an implementation baseline.
-> The issue came from automation setup and review gaps during early loop development.
+> `version-3` through `version-5` were archived to `_archived/` on February 16, 2026.
+> Do not use these runs for quality comparisons or best-candidate selection.
+> They are invalid due to an incorrect self-improvement-loop configuration that unintentionally reused `version-2` as an implementation baseline.
 
 ## How The Loop Evolved
 

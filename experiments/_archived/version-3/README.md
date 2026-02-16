@@ -1,24 +1,28 @@
-# Version 4
+# Version 3
+
+> [!WARNING]
+> Archived on February 16, 2026 as a broken experiment.
+> Do not use this run for benchmark scoring or baseline selection.
 
 ## Hypothesis
 
-Enforcing a unique spatial thesis per route will improve composition divergence and reduce repeated container cadence, increasing distinctiveness and Opus-target similarity.
+Stricter typography identity constraints will increase route-level personality and reduce repeated visual voice across `/1.. /5`, improving Opus-target similarity without harming readability.
 
 ## Mutation Axis
 
-Spatial thesis (`references/mutation_axes.md`, axis 4).
+Typography identity (`references/mutation_axes.md`, axis 3).
 
 ## Exact Skill Change
 
-Edited only `experiments/version-4/.agents/skills/frontend-design/SKILL.md` under `## Composition Rules` to add:
-- per-route spatial-thesis uniqueness constraints,
-- mandatory section-width shifts,
-- required off-grid anchor elements,
-- a spatial audit gate for repeated hero silhouette/cadence.
+Edited only `experiments/_archived/version-3/.agents/skills/frontend-design/SKILL.md` under `## Typography Rules` to add:
+- explicit route-level type pair planning with anti-reuse constraints,
+- one required typographic signature move per route,
+- intentional hero line-break rhythm requirements,
+- a final typography audit gate for hierarchy/rhythm duplication.
 
 ## Expected Visual Delta
 
-Stronger macro-layout divergence across routes and less repeated card-grid rhythm after the first fold.
+More differentiated typographic character between routes, stronger first-fold headlines, and less samey headline/body hierarchy patterns.
 
 ## Measured Result
 
@@ -27,16 +31,18 @@ Compared against:
 - `research/theo-screenshots-2k-clean/opus45_with_skill/`
 - `research/theo-screenshots-2k-clean/opus_iterations/`
 
-Rubric summary:
-- Previous (`version-3`) average: **1.44**
-- `version-4` average: **1.49**
-- Delta: **+0.05**
+Historical numbers below are retained only for traceability; this archived run is invalid for comparisons.
 
-Spatial divergence improved, especially in `/1`, `/4`, and `/5`. Remaining weakness is copy density in `/2` and `/3`.
+Rubric summary:
+- Baseline `version-2` average: **1.23**
+- `version-3` average: **1.44**
+- Delta: **+0.21**
+
+Biggest gains were in typography craft and route-level distinctiveness. Remaining gap is composition daring in mid-page sections for `/2` and `/3`.
 
 ## Keep / Drop
 
-Keep.
+Drop. Archived broken run kept only as an audit trail.
 
 ## Screenshots
 

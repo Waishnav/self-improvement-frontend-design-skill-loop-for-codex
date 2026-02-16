@@ -1,5 +1,9 @@
 # Version 5
 
+> [!WARNING]
+> Archived on February 16, 2026 as a broken experiment.
+> Do not use this run for benchmark scoring or baseline selection.
+
 ## Hypothesis
 
 Aggressive first-fold copy compression will reduce text clutter and produce cleaner, more visual compositions while preserving route clarity.
@@ -10,7 +14,7 @@ First-fold compression (`references/mutation_axes.md`, axis 1).
 
 ## Exact Skill Change
 
-Edited only `experiments/version-5/.agents/skills/frontend-design/SKILL.md` under `Text-heavy output` to tighten copy budgets:
+Edited only `experiments/_archived/version-5/.agents/skills/frontend-design/SKILL.md` under `Text-heavy output` to tighten copy budgets:
 - shorter hero and support copy caps,
 - strict above-the-fold word limits,
 - one supporting paragraph above fold,
@@ -22,11 +26,11 @@ Less verbose pages with more breathing room, stronger visual hierarchy, and fewe
 
 ## Measured Result
 
-Pending run and screenshot-based scoring.
+Invalid. This archived run is broken and excluded from scoring.
 
 ## Keep / Drop
 
-Pending.
+Drop. Archived broken run kept only as an audit trail.
 
 ## Screenshots
 
