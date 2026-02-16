@@ -6,13 +6,16 @@ usage() {
 Usage: new_version_from_previous.sh <previous-version-dir> <new-version-dir> [options]
 
 Options:
-  --topology <vertical|horizontal>  Set experiment topology label (default: vertical)
+  --topology <vertical>             Set experiment topology label (default: vertical)
   --copy-app                        Copy previous t4-canvas app (disabled by default)
+  --skill-source <previous|global>  Seed frontend skill from previous version or global skill (default: previous)
+  --global-skill-path <path>        Path to global SKILL.md when --skill-source global
 
 Examples:
   new_version_from_previous.sh experiments/version-2 experiments/version-3
-  new_version_from_previous.sh experiments/version-2 experiments/version-3 --topology horizontal
+  new_version_from_previous.sh experiments/version-2 experiments/version-3 --topology vertical
   new_version_from_previous.sh experiments/version-2 experiments/version-3 --copy-app
+  new_version_from_previous.sh experiments/version-9 experiments/version-10 --skill-source global
 EOF
 }
 
@@ -27,6 +30,8 @@ shift 2
 
 TOPOLOGY="vertical"
 COPY_APP=0
+SKILL_SOURCE="previous"
+GLOBAL_SKILL_PATH="/home/waishnav/.agents/skills/frontend-design/SKILL.md"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -42,6 +47,22 @@ while [[ $# -gt 0 ]]; do
       COPY_APP=1
       shift
       ;;
+    --skill-source)
+      if [[ $# -lt 2 ]]; then
+        echo "Missing value for --skill-source"
+        exit 1
+      fi
+      SKILL_SOURCE="$2"
+      shift 2
+      ;;
+    --global-skill-path)
+      if [[ $# -lt 2 ]]; then
+        echo "Missing value for --global-skill-path"
+        exit 1
+      fi
+      GLOBAL_SKILL_PATH="$2"
+      shift 2
+      ;;
     -h|--help)
       usage
       exit 0
@@ -54,8 +75,13 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-if [[ "$TOPOLOGY" != "vertical" && "$TOPOLOGY" != "horizontal" ]]; then
-  echo "--topology must be vertical or horizontal"
+if [[ "$TOPOLOGY" != "vertical" ]]; then
+  echo "--topology must be vertical for the sequential loop"
+  exit 1
+fi
+
+if [[ "$SKILL_SOURCE" != "previous" && "$SKILL_SOURCE" != "global" ]]; then
+  echo "--skill-source must be previous or global"
   exit 1
 fi
 
@@ -72,12 +98,19 @@ fi
 mkdir -p "$NEW_DIR/.agents/skills/frontend-design"
 mkdir -p "$NEW_DIR/screenshots"
 
-if [[ ! -f "$PREV_DIR/.agents/skills/frontend-design/SKILL.md" ]]; then
-  echo "Missing previous skill file: $PREV_DIR/.agents/skills/frontend-design/SKILL.md"
-  exit 1
+if [[ "$SKILL_SOURCE" == "previous" ]]; then
+  if [[ ! -f "$PREV_DIR/.agents/skills/frontend-design/SKILL.md" ]]; then
+    echo "Missing previous skill file: $PREV_DIR/.agents/skills/frontend-design/SKILL.md"
+    exit 1
+  fi
+  cp "$PREV_DIR/.agents/skills/frontend-design/SKILL.md" "$NEW_DIR/.agents/skills/frontend-design/SKILL.md"
+else
+  if [[ ! -f "$GLOBAL_SKILL_PATH" ]]; then
+    echo "Missing global skill file: $GLOBAL_SKILL_PATH"
+    exit 1
+  fi
+  cp "$GLOBAL_SKILL_PATH" "$NEW_DIR/.agents/skills/frontend-design/SKILL.md"
 fi
-
-cp "$PREV_DIR/.agents/skills/frontend-design/SKILL.md" "$NEW_DIR/.agents/skills/frontend-design/SKILL.md"
 
 mkdir -p "$NEW_DIR/t4-canvas"
 
@@ -102,11 +135,15 @@ cat > "$NEW_DIR/README.md" <<'EOF'
 
 ## Experiment Topology
 
-[TODO: vertical or horizontal]
+[TODO: vertical]
 
 ## Isolation Mode
 
 [TODO: isolated-fresh-app or copied-app]
+
+## Skill Baseline
+
+[TODO: previous-version-skill or global-frontend-skill]
 
 ## Hypothesis
 
@@ -190,10 +227,24 @@ path = pathlib.Path(sys.argv[1])
 topology = sys.argv[2]
 copy_app = sys.argv[3] == "1"
 text = path.read_text(encoding="utf-8")
-text = text.replace("[TODO: vertical or horizontal]", topology)
+text = text.replace("[TODO: vertical]", topology)
 text = text.replace(
     "[TODO: isolated-fresh-app or copied-app]",
     "copied-app" if copy_app else "isolated-fresh-app",
+)
+path.write_text(text, encoding="utf-8")
+PY
+
+python3 - "$NEW_DIR/README.md" "$SKILL_SOURCE" <<'PY'
+import pathlib
+import sys
+
+path = pathlib.Path(sys.argv[1])
+skill_source = sys.argv[2]
+text = path.read_text(encoding="utf-8")
+text = text.replace(
+    "[TODO: previous-version-skill or global-frontend-skill]",
+    "global-frontend-skill" if skill_source == "global" else "previous-version-skill",
 )
 path.write_text(text, encoding="utf-8")
 PY
@@ -203,5 +254,10 @@ if [[ "$COPY_APP" -eq 1 ]]; then
   echo "App mode: copied previous t4-canvas (legacy mode)"
 else
   echo "App mode: isolated fresh t4-canvas (default)"
+fi
+if [[ "$SKILL_SOURCE" == "global" ]]; then
+  echo "Skill mode: seeded from global frontend skill"
+else
+  echo "Skill mode: seeded from previous version skill"
 fi
 echo "Next: edit $NEW_DIR/.agents/skills/frontend-design/SKILL.md, $NEW_DIR/README.md, and $NEW_DIR/CRITQUES.md"
