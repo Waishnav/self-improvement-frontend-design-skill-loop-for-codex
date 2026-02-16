@@ -2,13 +2,10 @@
 
 This folder contains versioned `frontend-design` benchmark iterations using the same canonical `prompt.md`.
 
-## Important Notes
+## Current Status
 
-> [!WARNING]
-> `version-3` through `version-9`, plus `version-11` and `version-12`, were archived to `_archived/` on February 16, 2026.
-> Do not use archived runs for quality comparisons or best-candidate selection.
-> `version-3` to `version-5` were invalid due to an incorrect self-improvement-loop configuration that unintentionally reused `version-2` as an implementation baseline.
-> `version-6` to `version-9`, `version-11`, and `version-12` were archived due to non-portable `frontend-design` SKILL content that leaked experiment/versioning markers.
+- Active experiment track is sequential-only (one active version at a time, one mutation per iteration).
+- Archived runs are stored under `_archived/` and retained only for auditability.
 
 ## How The Loop Evolved
 
@@ -27,7 +24,7 @@ This folder contains versioned `frontend-design` benchmark iterations using the 
    - YOLO mode support was added for unattended overnight execution.
 
 4. Experiment design maturity stage:
-   - Vertical (sequential) and horizontal (parallel) experiment topologies were formalized.
+   - Sequential refinement became the primary experiment topology.
    - `CRITQUES.md` became a required artifact for each version.
    - Global `$frontend-design` seeding was enabled for true raw baseline starts.
 
