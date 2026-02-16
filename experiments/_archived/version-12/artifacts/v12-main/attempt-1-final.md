@@ -1,0 +1,1 @@
+The route components are in place. I’m now applying a comprehensive stylesheet that gives each path a distinct type system, motion language, and layout identity while keeping everything responsive.

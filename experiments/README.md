@@ -5,9 +5,10 @@ This folder contains versioned `frontend-design` benchmark iterations using the 
 ## Important Notes
 
 > [!WARNING]
-> `version-3` through `version-5` were archived to `_archived/` on February 16, 2026.
-> Do not use these runs for quality comparisons or best-candidate selection.
-> They are invalid due to an incorrect self-improvement-loop configuration that unintentionally reused `version-2` as an implementation baseline.
+> `version-3` through `version-9`, plus `version-11` and `version-12`, were archived to `_archived/` on February 16, 2026.
+> Do not use archived runs for quality comparisons or best-candidate selection.
+> `version-3` to `version-5` were invalid due to an incorrect self-improvement-loop configuration that unintentionally reused `version-2` as an implementation baseline.
+> `version-6` to `version-9`, `version-11`, and `version-12` were archived due to non-portable `frontend-design` SKILL content that leaked experiment/versioning markers.
 
 ## How The Loop Evolved
 
