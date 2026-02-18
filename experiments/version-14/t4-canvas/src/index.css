@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Chakra+Petch:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: 'Manrope', sans-serif;
+  background: #080b0d;
+  color: #f4f7f8;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.font-syne {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-fraunces {
+  font-family: 'Fraunces', serif;
+}
+
+.font-bricolage {
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.font-chakra {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-archivo {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-space {
+  font-family: 'Space Mono', monospace;
+}
+
+.font-plex {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.texture-grid {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.grain-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.12;
+  background-image: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.5) 0 1px, transparent 1px),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.4) 0 1px, transparent 1px);
+  background-size: 3px 3px, 4px 4px;
+  animation: grain-shift 8s linear infinite;
+}
+
+.glow-ring {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.14),
+    0 30px 60px -30px rgba(0, 0, 0, 0.75),
+    0 16px 32px -18px rgba(255, 255, 255, 0.35);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: rise 0.85s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.floaty {
+  animation: drift 6s ease-in-out infinite;
+}
+
+.marquee-track {
+  animation: marquee 24s linear infinite;
+}
+
+@keyframes rise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes grain-shift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-10%, 10%, 0);
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

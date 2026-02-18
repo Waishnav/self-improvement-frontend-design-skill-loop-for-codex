@@ -1,0 +1,7 @@
+error: unexpected argument '--color' found
+
+  tip: a similar argument exists: '--yolo'
+
+Usage: codex exec resume --dangerously-bypass-approvals-and-sandbox --json <SESSION_ID> [PROMPT]
+
+For more information, try '--help'.

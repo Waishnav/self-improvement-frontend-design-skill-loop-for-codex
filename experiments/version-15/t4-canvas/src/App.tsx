@@ -1,0 +1,23 @@
+import { Navigate, Route, Routes } from 'react-router-dom'
+import DesignOne from './pages/DesignOne'
+import DesignTwo from './pages/DesignTwo'
+import DesignThree from './pages/DesignThree'
+import DesignFour from './pages/DesignFour'
+import DesignFive from './pages/DesignFive'
+import HomeIndex from './pages/HomeIndex'
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomeIndex />} />
+      <Route path="/1" element={<DesignOne />} />
+      <Route path="/2" element={<DesignTwo />} />
+      <Route path="/3" element={<DesignThree />} />
+      <Route path="/4" element={<DesignFour />} />
+      <Route path="/5" element={<DesignFive />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
+  )
+}
+
+export default App

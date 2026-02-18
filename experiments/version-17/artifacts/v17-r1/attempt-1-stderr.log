@@ -1,0 +1,15 @@
+2026-02-16T11:04:57.090867Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c5dad-3340-71e0-b1d1-81aa407ba6b6
+2026-02-16T11:04:57.111752Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c5daf-5c77-77e2-90e5-8e73b4d73a70
+2026-02-16T11:04:57.132611Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c5db9-3cfb-7d81-9a4d-bc9b4f64e823
+2026-02-16T11:04:57.153470Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c5dc0-3d6e-7363-aa67-4d0baa4e2146
+2026-02-16T11:04:57.174376Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c5dc5-ad1f-7123-a77b-e4b1f9c9fff5
+2026-02-16T11:04:57.195204Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c5bb9-b6ab-74e0-92c4-a44f01e7ef1a
+2026-02-16T11:04:57.216059Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c5ddf-7429-7e32-a6eb-d6a1b1d435ba
+2026-02-16T11:04:57.236923Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c5de4-7c84-7d72-aa7b-02b8d0985f44
+2026-02-16T11:04:57.258107Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c6080-567d-78d3-ad48-b6740ae43dc6
+2026-02-16T11:04:57.279146Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c6087-9a96-7c11-9506-1b14090f6d48
+2026-02-16T11:04:57.300014Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c608d-90f1-7333-987c-ebcc6ed30be7
+2026-02-16T11:04:57.320922Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c654e-f75b-7f41-80d8-b5a6846004c3
+2026-02-16T11:04:57.341698Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c65ba-54cd-72b0-ab8c-5ca2f439580b
+2026-02-16T11:04:57.362829Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c65bc-8c67-7653-bfdc-a84158fc6a5e
+2026-02-16T11:04:57.383919Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c65e3-91e7-7253-a98d-c144b65002ad

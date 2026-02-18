@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Syne:wght@500;700;800&display=swap');
+@import 'tailwindcss';
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: 'Manrope', sans-serif;
+  background: #06090f;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: rgba(251, 191, 36, 0.85);
+  color: #0b0b0b;
+}
+
+.font-syne {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-noir-title {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.font-editorial-display {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-editorial-body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.font-circuit-display {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.font-atelier-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-atelier-body {
+  font-family: 'Sora', sans-serif;
+}
+
+.font-playful-display {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.font-playful-body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
