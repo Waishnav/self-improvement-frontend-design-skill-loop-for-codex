@@ -15,13 +15,14 @@ This repository benchmarks and improves `frontend-design` skill quality for GPT 
 1. Do not modify `prompt.md` unless explicitly asked.
 2. For new iterations, create a new `experiments/version-X/` folder; never overwrite old versions.
 3. Always run Codex from inside the active version folder while still using the shared root `prompt.md`.
-4. Keep each version self-contained:
+4. For raw experiments, seed from global `$frontend-design` (`/home/waishnav/.agents/skills/frontend-design/SKILL.md`) and keep app scaffolding fresh.
+5. Keep each version self-contained:
    - `.agents/skills/frontend-design/SKILL.md`
    - `t4-canvas/` output workspace (fresh/isolated by default; no inherited implementation)
    - `README.md` documenting hypotheses and changes
    - `CRITQUES.md` comparing outputs against expected reference designs
    - `screenshots/` with full-page captures for `/1` to `/5`
-5. Compare against visual targets before scoring:
+6. Compare against visual targets before scoring:
    - `research/targetted-designs/`
    - `research/theo-screenshots-2k-clean/opus45_with_skill/`
    - `research/theo-screenshots-2k-clean/opus_iterations/`

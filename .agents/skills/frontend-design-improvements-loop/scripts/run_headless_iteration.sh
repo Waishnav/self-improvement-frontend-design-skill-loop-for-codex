@@ -157,7 +157,6 @@ EOF
         "$THREAD_ID" \
         "${MODE_FLAG[@]}" \
         --json \
-        --color never \
         - < "$RESUME_PROMPT_FILE" \
         > "$ATTEMPT_EVENTS" 2> "$ATTEMPT_STDERR"
     )
