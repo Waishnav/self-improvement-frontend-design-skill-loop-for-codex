@@ -1,0 +1,128 @@
+---
+name: frontend-design
+description: Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.
+license: Complete terms in LICENSE.txt
+---
+
+This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices.
+
+The user provides frontend requirements: a component, page, application, or interface to build. They may include context about the purpose, audience, or technical constraints.
+
+## Design Thinking
+
+Before coding, understand the context and commit to a BOLD aesthetic direction:
+
+- **Purpose**: What problem does this interface solve? Who uses it?
+- **Tone**: Pick an extreme: brutally minimal, maximalist chaos, retro-futuristic, organic/natural, luxury/refined, playful/toy-like, editorial/magazine, brutalist/raw, art deco/geometric, soft/pastel, industrial/utilitarian, etc. There are so many flavors to choose from. Use these for inspiration but design one that is true to the aesthetic direction.
+- **Constraints**: Technical requirements (framework, performance, accessibility).
+- **Differentiation**: What makes this UNFORGETTABLE? What's the one thing someone will remember?
+
+**CRITICAL**: Choose a clear conceptual direction and execute it with precision. Bold maximalism and refined minimalism both work - the key is intentionality, not intensity.
+
+Then implement working code (HTML/CSS/JS, React, Vue, etc.) that is:
+
+- Production-grade and functional
+- Visually striking and memorable
+- Cohesive with a clear aesthetic point-of-view
+- Meticulously refined in every detail
+
+## Frontend Aesthetics Guidelines
+
+Focus on:
+
+- **Typography**: Choose fonts that are beautiful, unique, and interesting. Avoid generic fonts like Arial and Inter; opt instead for distinctive choices that elevate the frontend's aesthetics; unexpected, characterful font choices. Pair a distinctive display font with a refined body font.
+- **Color & Theme**: Commit to a cohesive aesthetic. Use CSS variables for consistency. Choose contrast intentionally (soft tonal, balanced, or high-contrast) based on product tone and audience instead of defaulting to intense accents.
+- **Motion**: Use animations for effects and micro-interactions. Prioritize CSS-only solutions for HTML. Use Motion library for React when available. Focus on high-impact moments: one well-orchestrated page load with staggered reveals (animation-delay) creates more delight than scattered micro-interactions. Use scroll-triggering and hover states that surprise.
+- **Spatial Composition**: Unexpected layouts. Asymmetry. Overlap. Diagonal flow. Grid-breaking elements. Generous negative space OR controlled density.
+- **Backgrounds & Visual Details**: Create atmosphere and depth rather than defaulting to solid colors. Add contextual effects and textures that match the overall aesthetic. Apply creative forms like gradient meshes, noise textures, geometric patterns, layered transparencies, dramatic shadows, decorative borders, custom cursors, and grain overlays.
+
+NEVER use generic AI-generated aesthetics like overused font families (Inter, Roboto, Arial, system fonts), cliched color schemes (particularly purple gradients on white backgrounds), predictable layouts and component patterns, and cookie-cutter design that lacks context-specific character.
+
+Interpret creatively and make unexpected choices that feel genuinely designed for the context. No design should be the same. Vary between light and dark themes, different fonts, different aesthetics. NEVER converge on common choices (Space Grotesk, for example) across generations.
+
+**IMPORTANT**: Match implementation complexity to the aesthetic vision. Maximalist designs need elaborate code with extensive animations and effects. Minimalist or refined designs need restraint, precision, and careful attention to spacing, typography, and subtle details. Elegance comes from executing the vision well.
+
+Remember: GPT is capable of extraordinary creative work. Don't hold back, show what can truly be created when thinking outside the box and committing fully to a distinctive vision.
+
+## Reliability and Overflow Gates
+
+Treat these checks as required before final output:
+
+- Verify layouts at three representative viewports (mobile, tablet, desktop).
+- Do not ship unintended horizontal overflow at any viewport.
+- Do not let fixed or sticky UI overlap and hide critical content.
+- Keep vertical rhythm consistent by using a spacing scale; avoid abrupt, accidental dead zones.
+- Keep readable type sizing and contrast for body, headings, controls, and muted text.
+- Ensure interactive elements have clear hover, focus, and active states.
+- If any gate fails, revise and re-check before final delivery.
+
+## Section Graph Diversity and Depth Guard
+
+Treat page depth as a required quality gate:
+
+- Assign a distinct section graph to each concept, not just a palette/type variation.
+- Each full-page concept must include a hero plus at least three substantive sections after the hero.
+- Include at least two deliberate macro rhythm changes after the hero (for example: dense to sparse, media-led to text-led, grid to freeform).
+- Reject outputs that end after a single feature strip or one repeated card row.
+- Avoid repeating the same lower-half structure across concepts.
+- Ensure each concept has a clear close-out band (conversion, summary, or footer narrative).
+
+## Anti-Repetition and Payload Continuity Guard
+
+Treat repetition and sparse placeholders as failures:
+
+- Do not repeat the same section shell three times in a row (same container, same card rhythm, same alignment pattern).
+- In concept sets, do not reuse the same hero macro-layout pattern more than twice.
+- Do not leave large visual dead zones between sections without intentional content.
+- Each major section must include meaningful payload (headline + support + at least one concrete visual or data module).
+- If a section is mostly decorative, pair it with functional content in the same band.
+- Cap spacer-only vertical gaps and replace them with transition modules when needed.
+- Before final output, scan the page top-to-bottom and rewrite any section that feels like a duplicate scaffold.
+
+## Information Pacing and Breathing Space Guard
+
+Treat cognitive load as a required quality gate:
+
+- Give each section one primary idea; move secondary details to later sections instead of stacking them immediately.
+- Keep first view payload tightly curated: no more than three informational clusters above the fold (excluding navigation).
+- Prefer concise support copy: keep most supporting paragraphs to one or two short sentences.
+- If a section carries dense controls or data, separate it from narrative copy using a distinct section break.
+- Preserve intentional negative space between major sections; do not fill every gap with extra cards or text.
+- For minimal or editorial directions, keep motion restrained and purposeful; avoid decorative animations that compete with reading.
+- Before final output, run a five-second scan check: product, core value, and primary action should be immediately clear.
+
+## Typography and Contrast De-Repetition Guard
+
+Treat repeated type systems and repeated color contrast profiles as failures:
+
+- For multi-concept outputs, assign each concept a distinct typography archetype (for example: humanist sans, geometric sans, editorial serif, grotesk, condensed display).
+- Do not reuse the same headline/body font pairing in more than two concepts.
+- Vary weight rhythm by concept; avoid defaulting to heavy hero + medium body in every design.
+- Set contrast intent before styling each concept: soft tonal, balanced neutral, or high-contrast punch.
+- Use accent restraint: one primary accent and one supporting accent unless the concept explicitly requires a broader palette.
+- Prefer tone, spacing, and scale for hierarchy before adding heavy borders, glows, or shadows.
+- Run a final divergence check: if two concepts feel typographically or chromatically interchangeable, rework one.
+
+## Interaction Outcome Guard
+
+Treat decorative-only interactions as failures:
+
+- Include at least one stateful control in the hero band that changes nearby visible content (not only button color).
+- Include at least one stateful interaction below the fold that updates a list, panel, metric, or preview.
+- Avoid sections where controls are shown but no content changes when states switch.
+- Prefer product-behavior interactions (compare modes, filters, timeline steps, queue presets, before/after views) over novelty toggles.
+- Keep interaction copy concise: labels should communicate what changes when selected.
+- Verify keyboard and touch access for every primary interactive control.
+- Before final output, perform an interaction audit: every featured control must have a visible result in the same section.
+
+## Layout Archetype Rotation Guard
+
+Treat repeated macro-layout grammar as a failure:
+
+- For multi-concept outputs, assign each concept a distinct layout archetype before implementation.
+- Do not reuse any single archetype more than twice across five concepts.
+- Avoid repeated hero scaffold chains (for example: left-copy + right-panel + card row + pricing slab) appearing in multiple concepts unchanged.
+- Include at least one media-led or diagram-led section in each concept; do not rely on card stacks for every section.
+- Force rhythm alternation after the hero: if one section is dense, the next major section must be calmer and higher-whitespace.
+- Do not use the same container treatment for three consecutive sections in a page.
+- Before final output, run a structure pass: if two concepts remain wireframe-similar after stripping color and typography, re-layout one concept.

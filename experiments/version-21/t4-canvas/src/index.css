@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Rajdhani:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #04060c;
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.font-bricolage {
+  font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', 'Impact', sans-serif;
+}
+
+.font-fraunces {
+  font-family: 'Fraunces', 'Georgia', serif;
+}
+
+.font-rajdhani {
+  font-family: 'Rajdhani', 'Segoe UI', sans-serif;
+}
+
+.font-syne {
+  font-family: 'Syne', 'Verdana', sans-serif;
+}
