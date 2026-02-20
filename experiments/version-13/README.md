@@ -49,3 +49,22 @@ Key observation: first-fold styling quality is decent, but route depth is too sh
 ## Keep / Drop
 
 Keep (seed baseline for this run; initial iteration has no prior in-run comparator). Next iteration will target section-graph depth and rhythm.
+
+## Screenshots
+
+Full-page screenshots for each route:
+
+### Route /1
+![Route 1](screenshots/version-13-route-1.png)
+
+### Route /2
+![Route 2](screenshots/version-13-route-2.png)
+
+### Route /3
+![Route 3](screenshots/version-13-route-3.png)
+
+### Route /4
+![Route 4](screenshots/version-13-route-4.png)
+
+### Route /5
+![Route 5](screenshots/version-13-route-5.png)
