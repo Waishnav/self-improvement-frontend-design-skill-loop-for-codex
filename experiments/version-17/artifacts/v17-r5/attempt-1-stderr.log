@@ -1,0 +1,9 @@
+WARNING: failed to clean up stale arg0 temp dirs: Permission denied (os error 13)
+WARNING: proceeding, even though we could not update PATH: Permission denied (os error 13) at path "/home/waishnav/.codex/tmp/arg0/codex-arg0PLKlCA"
+2026-02-19T05:17:32.996552Z ERROR codex_core::codex: failed to record rollout items: failed to queue rollout items: channel closed
+2026-02-19T05:17:36.202079Z ERROR codex_core::codex: failed to record rollout items: failed to queue rollout items: channel closed
+2026-02-19T05:17:39.805248Z ERROR codex_core::codex: failed to record rollout items: failed to queue rollout items: channel closed
+2026-02-19T05:17:43.790645Z ERROR codex_core::codex: failed to record rollout items: failed to queue rollout items: channel closed
+2026-02-19T05:17:48.643374Z ERROR codex_core::codex: failed to record rollout items: failed to queue rollout items: channel closed
+2026-02-19T05:17:55.242121Z ERROR codex_core::codex: failed to record rollout items: failed to queue rollout items: channel closed
+2026-02-19T05:17:58.210731Z ERROR codex_core::codex: failed to record rollout items: failed to queue rollout items: channel closed

@@ -1,0 +1,12 @@
+attempt=1 start=2026-02-19T10:47:32+05:30
+thread_id=019c7454-fdbf-75a0-a1fb-18194c961a72
+attempt=1 rc=1 end=2026-02-19T10:47:58+05:30
+attempt=1 failed; retrying after 15s
+attempt=2 start=2026-02-19T10:48:13+05:30
+attempt=2 rc=1 end=2026-02-19T10:48:37+05:30
+attempt=2 failed; retrying after 15s
+attempt=3 start=2026-02-19T10:48:52+05:30
+attempt=3 rc=1 end=2026-02-19T10:49:17+05:30
+attempt=3 failed; retrying after 15s
+attempt=4 start=2026-02-19T10:49:32+05:30
+attempt=4 rc=1 end=2026-02-19T10:49:56+05:30
