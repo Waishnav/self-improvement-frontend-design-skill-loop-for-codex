@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import FeedbackForm from '../../../components/FeedbackForm';
 import type { Experiment, ExperimentRoute } from '../../../lib/experiments';
 import { getAllExperiments } from '../../../lib/experiments';
 
@@ -65,5 +66,9 @@ const nextRoute = experiment.routes.find((candidate) => Number(candidate.id) ===
     ) : (
       <span></span>
     )}
+  </section>
+
+  <section class="container">
+    <FeedbackForm client:load version={experiment.version} route={route.path} />
   </section>
 </BaseLayout>
