@@ -61,12 +61,35 @@ function rewriteAppAssetPaths(html, version) {
     .replace(/(["'])\/vite\.svg/g, `$1/experiment-apps/${version}/vite.svg`);
 }
 
-function addRouteBootstrap(html, routeId) {
-  const bootScript = `<script>history.replaceState({}, '', '/${routeId}');</script>`;
+function injectRouteBridge(html) {
+  const bridgeScript = `<script>
+(() => {
+  const normalizeRoute = (value) => {
+    if (typeof value !== 'string') return null;
+    const trimmed = value.trim();
+    if (!trimmed) return null;
+    return trimmed.startsWith('/') ? trimmed : '/' + trimmed;
+  };
+  const applyRoute = (route, mode) => {
+    const normalized = normalizeRoute(route);
+    if (!normalized || location.pathname === normalized) return;
+    if (mode === 'push') history.pushState({}, '', normalized);
+    else history.replaceState({}, '', normalized);
+    window.dispatchEvent(new PopStateEvent('popstate'));
+  };
+  const params = new URLSearchParams(location.search);
+  applyRoute(params.get('route'), 'replace');
+  window.addEventListener('message', (event) => {
+    const payload = event.data;
+    if (!payload || payload.type !== 'codex-route-change') return;
+    applyRoute(payload.route, 'push');
+  });
+})();
+</script>`;
   if (html.includes('<script type="module"')) {
-    return html.replace('<script type="module"', `${bootScript}\n    <script type="module"`);
+    return html.replace('<script type="module"', `${bridgeScript}\n    <script type="module"`);
   }
-  return html.replace('</body>', `  ${bootScript}\n  </body>`);
+  return html.replace('</body>', `  ${bridgeScript}\n  </body>`);
 }
 
 function compareByVersion(a, b) {
@@ -124,15 +147,8 @@ for (const current of versions) {
     const appIndexPath = path.join(appTargetDir, 'index.html');
     if (await fileExists(appIndexPath)) {
       const indexContent = await readFile(appIndexPath, 'utf8');
-      const rewrittenIndex = rewriteAppAssetPaths(indexContent, current.version);
+      const rewrittenIndex = injectRouteBridge(rewriteAppAssetPaths(indexContent, current.version));
       await writeFile(appIndexPath, rewrittenIndex);
-
-      const routeEntryPointDir = path.join(appTargetDir, 'routes');
-      await mkdir(routeEntryPointDir, { recursive: true });
-      for (const routeId of routeIds) {
-        const routeHtml = addRouteBootstrap(rewrittenIndex, routeId);
-        await writeFile(path.join(routeEntryPointDir, `${routeId}.html`), routeHtml);
-      }
 
       appHomeUrl = `/experiment-apps/${current.version}/index.html`;
     }
@@ -170,7 +186,7 @@ for (const current of versions) {
       slug: routeId,
       path: `/${routeId}`,
       screenshot,
-      liveUrl: appHomeUrl ? `/experiment-apps/${current.version}/routes/${routeId}.html` : null
+      liveUrl: appHomeUrl
     });
   }
 

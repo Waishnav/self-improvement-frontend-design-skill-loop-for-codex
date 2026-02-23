@@ -18,35 +18,35 @@
           "slug": "1",
           "path": "/1",
           "screenshot": "/experiment-assets/version-1/route-1.png",
-          "liveUrl": "/experiment-apps/version-1/routes/1.html"
+          "liveUrl": "/experiment-apps/version-1/index.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
           "screenshot": "/experiment-assets/version-1/route-2.png",
-          "liveUrl": "/experiment-apps/version-1/routes/2.html"
+          "liveUrl": "/experiment-apps/version-1/index.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
           "screenshot": "/experiment-assets/version-1/route-3.png",
-          "liveUrl": "/experiment-apps/version-1/routes/3.html"
+          "liveUrl": "/experiment-apps/version-1/index.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
           "screenshot": "/experiment-assets/version-1/route-4.png",
-          "liveUrl": "/experiment-apps/version-1/routes/4.html"
+          "liveUrl": "/experiment-apps/version-1/index.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
           "screenshot": "/experiment-assets/version-1/route-5.png",
-          "liveUrl": "/experiment-apps/version-1/routes/5.html"
+          "liveUrl": "/experiment-apps/version-1/index.html"
         }
       ]
     },
@@ -67,35 +67,35 @@
           "slug": "1",
           "path": "/1",
           "screenshot": "/experiment-assets/version-2/route-1.png",
-          "liveUrl": "/experiment-apps/version-2/routes/1.html"
+          "liveUrl": "/experiment-apps/version-2/index.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
           "screenshot": "/experiment-assets/version-2/route-2.png",
-          "liveUrl": "/experiment-apps/version-2/routes/2.html"
+          "liveUrl": "/experiment-apps/version-2/index.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
           "screenshot": "/experiment-assets/version-2/route-3.png",
-          "liveUrl": "/experiment-apps/version-2/routes/3.html"
+          "liveUrl": "/experiment-apps/version-2/index.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
           "screenshot": "/experiment-assets/version-2/route-4.png",
-          "liveUrl": "/experiment-apps/version-2/routes/4.html"
+          "liveUrl": "/experiment-apps/version-2/index.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
           "screenshot": "/experiment-assets/version-2/route-5.png",
-          "liveUrl": "/experiment-apps/version-2/routes/5.html"
+          "liveUrl": "/experiment-apps/version-2/index.html"
         }
       ]
     },
@@ -116,35 +116,35 @@
           "slug": "1",
           "path": "/1",
           "screenshot": "/experiment-assets/version-13/route-1.png",
-          "liveUrl": "/experiment-apps/version-13/routes/1.html"
+          "liveUrl": "/experiment-apps/version-13/index.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
           "screenshot": "/experiment-assets/version-13/route-2.png",
-          "liveUrl": "/experiment-apps/version-13/routes/2.html"
+          "liveUrl": "/experiment-apps/version-13/index.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
           "screenshot": "/experiment-assets/version-13/route-3.png",
-          "liveUrl": "/experiment-apps/version-13/routes/3.html"
+          "liveUrl": "/experiment-apps/version-13/index.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
           "screenshot": "/experiment-assets/version-13/route-4.png",
-          "liveUrl": "/experiment-apps/version-13/routes/4.html"
+          "liveUrl": "/experiment-apps/version-13/index.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
           "screenshot": "/experiment-assets/version-13/route-5.png",
-          "liveUrl": "/experiment-apps/version-13/routes/5.html"
+          "liveUrl": "/experiment-apps/version-13/index.html"
         }
       ]
     },
@@ -165,35 +165,35 @@
           "slug": "1",
           "path": "/1",
           "screenshot": "/experiment-assets/version-14/route-1.png",
-          "liveUrl": "/experiment-apps/version-14/routes/1.html"
+          "liveUrl": "/experiment-apps/version-14/index.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
           "screenshot": "/experiment-assets/version-14/route-2.png",
-          "liveUrl": "/experiment-apps/version-14/routes/2.html"
+          "liveUrl": "/experiment-apps/version-14/index.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
           "screenshot": "/experiment-assets/version-14/route-3.png",
-          "liveUrl": "/experiment-apps/version-14/routes/3.html"
+          "liveUrl": "/experiment-apps/version-14/index.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
           "screenshot": "/experiment-assets/version-14/route-4.png",
-          "liveUrl": "/experiment-apps/version-14/routes/4.html"
+          "liveUrl": "/experiment-apps/version-14/index.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
           "screenshot": "/experiment-assets/version-14/route-5.png",
-          "liveUrl": "/experiment-apps/version-14/routes/5.html"
+          "liveUrl": "/experiment-apps/version-14/index.html"
         }
       ]
     },
@@ -214,35 +214,35 @@
           "slug": "1",
           "path": "/1",
           "screenshot": "/experiment-assets/version-15/route-1.png",
-          "liveUrl": "/experiment-apps/version-15/routes/1.html"
+          "liveUrl": "/experiment-apps/version-15/index.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
           "screenshot": "/experiment-assets/version-15/route-2.png",
-          "liveUrl": "/experiment-apps/version-15/routes/2.html"
+          "liveUrl": "/experiment-apps/version-15/index.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
           "screenshot": "/experiment-assets/version-15/route-3.png",
-          "liveUrl": "/experiment-apps/version-15/routes/3.html"
+          "liveUrl": "/experiment-apps/version-15/index.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
           "screenshot": "/experiment-assets/version-15/route-4.png",
-          "liveUrl": "/experiment-apps/version-15/routes/4.html"
+          "liveUrl": "/experiment-apps/version-15/index.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
           "screenshot": "/experiment-assets/version-15/route-5.png",
-          "liveUrl": "/experiment-apps/version-15/routes/5.html"
+          "liveUrl": "/experiment-apps/version-15/index.html"
         }
       ]
     },
@@ -263,35 +263,35 @@
           "slug": "1",
           "path": "/1",
           "screenshot": "/experiment-assets/version-16/route-1.png",
-          "liveUrl": "/experiment-apps/version-16/routes/1.html"
+          "liveUrl": "/experiment-apps/version-16/index.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
           "screenshot": "/experiment-assets/version-16/route-2.png",
-          "liveUrl": "/experiment-apps/version-16/routes/2.html"
+          "liveUrl": "/experiment-apps/version-16/index.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
           "screenshot": "/experiment-assets/version-16/route-3.png",
-          "liveUrl": "/experiment-apps/version-16/routes/3.html"
+          "liveUrl": "/experiment-apps/version-16/index.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
           "screenshot": "/experiment-assets/version-16/route-4.png",
-          "liveUrl": "/experiment-apps/version-16/routes/4.html"
+          "liveUrl": "/experiment-apps/version-16/index.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
           "screenshot": "/experiment-assets/version-16/route-5.png",
-          "liveUrl": "/experiment-apps/version-16/routes/5.html"
+          "liveUrl": "/experiment-apps/version-16/index.html"
         }
       ]
     },
@@ -312,35 +312,35 @@
           "slug": "1",
           "path": "/1",
           "screenshot": "/experiment-assets/version-17/route-1.png",
-          "liveUrl": "/experiment-apps/version-17/routes/1.html"
+          "liveUrl": "/experiment-apps/version-17/index.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
           "screenshot": "/experiment-assets/version-17/route-2.png",
-          "liveUrl": "/experiment-apps/version-17/routes/2.html"
+          "liveUrl": "/experiment-apps/version-17/index.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
           "screenshot": "/experiment-assets/version-17/route-3.png",
-          "liveUrl": "/experiment-apps/version-17/routes/3.html"
+          "liveUrl": "/experiment-apps/version-17/index.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
           "screenshot": "/experiment-assets/version-17/route-4.png",
-          "liveUrl": "/experiment-apps/version-17/routes/4.html"
+          "liveUrl": "/experiment-apps/version-17/index.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
           "screenshot": "/experiment-assets/version-17/route-5.png",
-          "liveUrl": "/experiment-apps/version-17/routes/5.html"
+          "liveUrl": "/experiment-apps/version-17/index.html"
         }
       ]
     },
@@ -361,35 +361,35 @@
           "slug": "1",
           "path": "/1",
           "screenshot": "/experiment-assets/version-18/route-1.png",
-          "liveUrl": "/experiment-apps/version-18/routes/1.html"
+          "liveUrl": "/experiment-apps/version-18/index.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
           "screenshot": "/experiment-assets/version-18/route-2.png",
-          "liveUrl": "/experiment-apps/version-18/routes/2.html"
+          "liveUrl": "/experiment-apps/version-18/index.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
           "screenshot": "/experiment-assets/version-18/route-3.png",
-          "liveUrl": "/experiment-apps/version-18/routes/3.html"
+          "liveUrl": "/experiment-apps/version-18/index.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
           "screenshot": "/experiment-assets/version-18/route-4.png",
-          "liveUrl": "/experiment-apps/version-18/routes/4.html"
+          "liveUrl": "/experiment-apps/version-18/index.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
           "screenshot": "/experiment-assets/version-18/route-5.png",
-          "liveUrl": "/experiment-apps/version-18/routes/5.html"
+          "liveUrl": "/experiment-apps/version-18/index.html"
         }
       ]
     },
@@ -410,35 +410,35 @@
           "slug": "1",
           "path": "/1",
           "screenshot": "/experiment-assets/version-19/route-1.png",
-          "liveUrl": "/experiment-apps/version-19/routes/1.html"
+          "liveUrl": "/experiment-apps/version-19/index.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
           "screenshot": "/experiment-assets/version-19/route-2.png",
-          "liveUrl": "/experiment-apps/version-19/routes/2.html"
+          "liveUrl": "/experiment-apps/version-19/index.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
           "screenshot": "/experiment-assets/version-19/route-3.png",
-          "liveUrl": "/experiment-apps/version-19/routes/3.html"
+          "liveUrl": "/experiment-apps/version-19/index.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
           "screenshot": "/experiment-assets/version-19/route-4.png",
-          "liveUrl": "/experiment-apps/version-19/routes/4.html"
+          "liveUrl": "/experiment-apps/version-19/index.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
           "screenshot": "/experiment-assets/version-19/route-5.png",
-          "liveUrl": "/experiment-apps/version-19/routes/5.html"
+          "liveUrl": "/experiment-apps/version-19/index.html"
         }
       ]
     },
@@ -459,35 +459,35 @@
           "slug": "1",
           "path": "/1",
           "screenshot": "/experiment-assets/version-20/route-1.png",
-          "liveUrl": "/experiment-apps/version-20/routes/1.html"
+          "liveUrl": "/experiment-apps/version-20/index.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
           "screenshot": "/experiment-assets/version-20/route-2.png",
-          "liveUrl": "/experiment-apps/version-20/routes/2.html"
+          "liveUrl": "/experiment-apps/version-20/index.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
           "screenshot": "/experiment-assets/version-20/route-3.png",
-          "liveUrl": "/experiment-apps/version-20/routes/3.html"
+          "liveUrl": "/experiment-apps/version-20/index.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
           "screenshot": "/experiment-assets/version-20/route-4.png",
-          "liveUrl": "/experiment-apps/version-20/routes/4.html"
+          "liveUrl": "/experiment-apps/version-20/index.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
           "screenshot": "/experiment-assets/version-20/route-5.png",
-          "liveUrl": "/experiment-apps/version-20/routes/5.html"
+          "liveUrl": "/experiment-apps/version-20/index.html"
         }
       ]
     },
@@ -508,35 +508,35 @@
           "slug": "1",
           "path": "/1",
           "screenshot": "/experiment-assets/version-21/route-1.png",
-          "liveUrl": "/experiment-apps/version-21/routes/1.html"
+          "liveUrl": "/experiment-apps/version-21/index.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
           "screenshot": "/experiment-assets/version-21/route-2.png",
-          "liveUrl": "/experiment-apps/version-21/routes/2.html"
+          "liveUrl": "/experiment-apps/version-21/index.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
           "screenshot": "/experiment-assets/version-21/route-3.png",
-          "liveUrl": "/experiment-apps/version-21/routes/3.html"
+          "liveUrl": "/experiment-apps/version-21/index.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
           "screenshot": "/experiment-assets/version-21/route-4.png",
-          "liveUrl": "/experiment-apps/version-21/routes/4.html"
+          "liveUrl": "/experiment-apps/version-21/index.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
           "screenshot": "/experiment-assets/version-21/route-5.png",
-          "liveUrl": "/experiment-apps/version-21/routes/5.html"
+          "liveUrl": "/experiment-apps/version-21/index.html"
         }
       ]
     },
@@ -557,35 +557,35 @@
           "slug": "1",
           "path": "/1",
           "screenshot": "/experiment-assets/version-22/route-1.png",
-          "liveUrl": "/experiment-apps/version-22/routes/1.html"
+          "liveUrl": "/experiment-apps/version-22/index.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
           "screenshot": "/experiment-assets/version-22/route-2.png",
-          "liveUrl": "/experiment-apps/version-22/routes/2.html"
+          "liveUrl": "/experiment-apps/version-22/index.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
           "screenshot": "/experiment-assets/version-22/route-3.png",
-          "liveUrl": "/experiment-apps/version-22/routes/3.html"
+          "liveUrl": "/experiment-apps/version-22/index.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
           "screenshot": "/experiment-assets/version-22/route-4.png",
-          "liveUrl": "/experiment-apps/version-22/routes/4.html"
+          "liveUrl": "/experiment-apps/version-22/index.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
           "screenshot": "/experiment-assets/version-22/route-5.png",
-          "liveUrl": "/experiment-apps/version-22/routes/5.html"
+          "liveUrl": "/experiment-apps/version-22/index.html"
         }
       ]
     }

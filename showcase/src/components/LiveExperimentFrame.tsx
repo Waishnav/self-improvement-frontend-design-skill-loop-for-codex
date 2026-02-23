@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import type { ExperimentRoute } from '../lib/experiments';
 
 interface LiveExperimentFrameProps {
@@ -14,12 +14,32 @@ export default function LiveExperimentFrame({
   routes,
   initialRouteId = '1'
 }: LiveExperimentFrameProps) {
-  const playableRoutes = useMemo(() => routes.filter((route) => route.liveUrl), [routes]);
+  const frameRef = useRef<HTMLIFrameElement | null>(null);
+  const playableRoutes = useMemo(() => routes.filter((route) => route.path), [routes]);
   const initialRoute = playableRoutes.find((route) => route.id === initialRouteId) || playableRoutes[0] || null;
   const [activeId, setActiveId] = useState(initialRoute?.id || '');
+  const [frameLoaded, setFrameLoaded] = useState(false);
   const activeRoute = playableRoutes.find((route) => route.id === activeId) || initialRoute;
+  const initialFrameUrl = useMemo(() => {
+    if (!appHomeUrl || !initialRoute?.path) return '';
+    return `${appHomeUrl}?route=${encodeURIComponent(initialRoute.path)}`;
+  }, [appHomeUrl, initialRoute?.path]);
 
-  if (!appHomeUrl || !activeRoute?.liveUrl) {
+  useEffect(() => {
+    if (!frameLoaded || !activeRoute?.path || !frameRef.current?.contentWindow) {
+      return;
+    }
+
+    frameRef.current.contentWindow.postMessage(
+      {
+        type: 'codex-route-change',
+        route: activeRoute.path
+      },
+      window.location.origin
+    );
+  }, [activeRoute?.path, frameLoaded]);
+
+  if (!appHomeUrl || !activeRoute?.path) {
     return (
       <section className="live-panel">
         <p className="eyebrow">Interactive Preview</p>
@@ -59,11 +79,12 @@ export default function LiveExperimentFrame({
 
       <div className="live-frame-wrap">
         <iframe
-          key={`${version}-${activeRoute.id}`}
-          src={activeRoute.liveUrl}
+          ref={frameRef}
+          src={initialFrameUrl}
           title={`${version} ${activeRoute.path} live preview`}
           loading="lazy"
           allow="clipboard-read; clipboard-write"
+          onLoad={() => setFrameLoaded(true)}
         />
       </div>
     </section>
