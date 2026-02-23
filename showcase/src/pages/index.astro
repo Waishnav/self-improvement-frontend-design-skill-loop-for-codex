@@ -1,5 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAllExperiments } from '../lib/experiments';
+
+const experiments = getAllExperiments();
+const latest = experiments.slice(0, 3);
 ---
 
 <BaseLayout
@@ -53,5 +57,29 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <li>Capture full-page screenshots (`/1.. /5`).</li>
       <li>Critique and score, then decide keep/drop for next version.</li>
     </ol>
+  </section>
+
+  <section class="container">
+    <div class="section-head-inline">
+      <h2>Latest Iterations</h2>
+      <a href="/experiments" class="inline-link">See all versions</a>
+    </div>
+    <div class="mini-grid">
+      {
+        latest.map((experiment) => (
+          <article class="mini-card">
+            <p class="eyebrow">{experiment.version}</p>
+            <h3>{experiment.title}</h3>
+            <p>{experiment.hypothesis}</p>
+            <p class="muted small">
+              {experiment.scoreOutOf20 !== null ? `${experiment.scoreOutOf20.toFixed(1)} / 20` : 'Score unavailable'}
+            </p>
+            <a class="inline-link" href={`/experiments/${experiment.version}`}>
+              Open result set
+            </a>
+          </article>
+        ))
+      }
+    </div>
   </section>
 </BaseLayout>

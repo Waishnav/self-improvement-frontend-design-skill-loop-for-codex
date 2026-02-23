@@ -1,14 +1,51 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getAllExperiments, getManifestMeta } from '../../lib/experiments';
+
+const experiments = getAllExperiments();
+const meta = getManifestMeta();
 ---
 
-<BaseLayout title="Experiments | Codex Frontend Lab" description="Versioned experiment outputs and results.">
+<BaseLayout title="Experiments | Codex Frontend Lab" description="Versioned experiment outputs and measured results.">
   <section class="container page-head">
     <p class="eyebrow">Versioned Outputs</p>
     <h1>Experiment Gallery</h1>
     <p>
-      Version-level cards will be generated from the repository manifest. This page is scaffolded and will be wired to
-      the real experiment data in the next commit.
+      Explore each iteration as a controlled mutation experiment. Every version preserves the shared prompt while
+      evolving skill constraints to push route-level frontend quality.
     </p>
+    <p class="manifest-meta">Tracked versions: {meta.experimentCount}</p>
+  </section>
+
+  <section class="container experiment-grid" aria-label="Experiment Versions">
+    {
+      experiments.map((experiment) => (
+        <article class="experiment-card">
+          <a href={`/experiments/${experiment.version}`} class="experiment-cover-link" aria-label={`Open ${experiment.title}`}>
+            {experiment.routes[0]?.screenshot ? (
+              <img src={experiment.routes[0].screenshot} alt={`${experiment.title} route 1`} loading="lazy" />
+            ) : (
+              <div class="missing-shot">Screenshot missing</div>
+            )}
+          </a>
+          <div class="experiment-body">
+            <div class="experiment-topline">
+              <h2>
+                <a href={`/experiments/${experiment.version}`}>{experiment.title}</a>
+              </h2>
+              {experiment.scoreOutOf20 !== null ? (
+                <p class="score-badge">{experiment.scoreOutOf20.toFixed(1)} / 20</p>
+              ) : (
+                <p class="score-badge muted">No score</p>
+              )}
+            </div>
+            <p class="muted small">{experiment.version}</p>
+            <p>{experiment.hypothesis}</p>
+            <p class="muted small">Axis: {experiment.mutationAxis}</p>
+            <a href={`/experiments/${experiment.version}`} class="inline-link">View routes and details</a>
+          </div>
+        </article>
+      ))
+    }
   </section>
 </BaseLayout>

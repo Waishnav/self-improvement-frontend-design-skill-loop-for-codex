@@ -1,5 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAllExperiments } from '../lib/experiments';
+
+const experiments = getAllExperiments();
 ---
 
 <BaseLayout title="Skill Evolution | Codex Frontend Lab" description="How frontend skill instructions evolved across experiment versions.">
@@ -25,5 +28,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <h2>Benchmark Fairness</h2>
       <p>The shared prompt remains untouched to avoid prompt drift inflating perceived improvements.</p>
     </article>
+  </section>
+
+  <section class="container">
+    <h2>Mutation Timeline</h2>
+    <div class="timeline-table">
+      {
+        experiments.map((experiment) => (
+          <a class="timeline-row" href={`/experiments/${experiment.version}`}>
+            <span class="version-cell">{experiment.version}</span>
+            <span>{experiment.mutationAxis}</span>
+            <span>{experiment.scoreOutOf20 !== null ? `${experiment.scoreOutOf20.toFixed(1)} / 20` : 'No score'}</span>
+          </a>
+        ))
+      }
+    </div>
   </section>
 </BaseLayout>

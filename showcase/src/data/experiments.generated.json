@@ -1,4 +1,521 @@
 {
-  "generatedAt": "2026-02-23T17:49:39.101Z",
-  "experiments": []
+  "experimentCount": 12,
+  "experiments": [
+    {
+      "version": "version-1",
+      "versionNumber": 1,
+      "title": "Experiment: Version 1",
+      "readmePath": "/experiment-docs/version-1/README.md",
+      "critiquesPath": "/experiment-docs/version-1/CRITQUES.md",
+      "hypothesis": "Hypothesis not stated in README.",
+      "mutationAxis": "Mutation axis not stated.",
+      "keepDrop": "No explicit keep/drop summary.",
+      "scoreOutOf20": null,
+      "routes": [
+        {
+          "id": "1",
+          "slug": "1",
+          "path": "/1",
+          "screenshot": "/experiment-assets/version-1/route-1.png"
+        },
+        {
+          "id": "2",
+          "slug": "2",
+          "path": "/2",
+          "screenshot": "/experiment-assets/version-1/route-2.png"
+        },
+        {
+          "id": "3",
+          "slug": "3",
+          "path": "/3",
+          "screenshot": "/experiment-assets/version-1/route-3.png"
+        },
+        {
+          "id": "4",
+          "slug": "4",
+          "path": "/4",
+          "screenshot": "/experiment-assets/version-1/route-4.png"
+        },
+        {
+          "id": "5",
+          "slug": "5",
+          "path": "/5",
+          "screenshot": "/experiment-assets/version-1/route-5.png"
+        }
+      ]
+    },
+    {
+      "version": "version-2",
+      "versionNumber": 2,
+      "title": "Version 2",
+      "readmePath": "/experiment-docs/version-2/README.md",
+      "critiquesPath": "/experiment-docs/version-2/CRITQUES.md",
+      "hypothesis": "Hypothesis not stated in README.",
+      "mutationAxis": "Mutation axis not stated.",
+      "keepDrop": "No explicit keep/drop summary.",
+      "scoreOutOf20": null,
+      "routes": [
+        {
+          "id": "1",
+          "slug": "1",
+          "path": "/1",
+          "screenshot": "/experiment-assets/version-2/route-1.png"
+        },
+        {
+          "id": "2",
+          "slug": "2",
+          "path": "/2",
+          "screenshot": "/experiment-assets/version-2/route-2.png"
+        },
+        {
+          "id": "3",
+          "slug": "3",
+          "path": "/3",
+          "screenshot": "/experiment-assets/version-2/route-3.png"
+        },
+        {
+          "id": "4",
+          "slug": "4",
+          "path": "/4",
+          "screenshot": "/experiment-assets/version-2/route-4.png"
+        },
+        {
+          "id": "5",
+          "slug": "5",
+          "path": "/5",
+          "screenshot": "/experiment-assets/version-2/route-5.png"
+        }
+      ]
+    },
+    {
+      "version": "version-13",
+      "versionNumber": 13,
+      "title": "Version 13",
+      "readmePath": "/experiment-docs/version-13/README.md",
+      "critiquesPath": "/experiment-docs/version-13/CRITQUES.md",
+      "hypothesis": "Adding explicit reliability and overflow quality gates will improve visual finish and mobile consistency without reducing route-level creativity.",
+      "mutationAxis": "10. Reliability and overflow gates",
+      "keepDrop": "Keep (seed baseline for this run; initial iteration has no prior in-run comparator). Next iteration will target section-graph depth and rhythm.",
+      "scoreOutOf20": 11.8,
+      "routes": [
+        {
+          "id": "1",
+          "slug": "1",
+          "path": "/1",
+          "screenshot": "/experiment-assets/version-13/route-1.png"
+        },
+        {
+          "id": "2",
+          "slug": "2",
+          "path": "/2",
+          "screenshot": "/experiment-assets/version-13/route-2.png"
+        },
+        {
+          "id": "3",
+          "slug": "3",
+          "path": "/3",
+          "screenshot": "/experiment-assets/version-13/route-3.png"
+        },
+        {
+          "id": "4",
+          "slug": "4",
+          "path": "/4",
+          "screenshot": "/experiment-assets/version-13/route-4.png"
+        },
+        {
+          "id": "5",
+          "slug": "5",
+          "path": "/5",
+          "screenshot": "/experiment-assets/version-13/route-5.png"
+        }
+      ]
+    },
+    {
+      "version": "version-14",
+      "versionNumber": 14,
+      "title": "Version 14",
+      "readmePath": "/experiment-docs/version-14/README.md",
+      "critiquesPath": "/experiment-docs/version-14/CRITQUES.md",
+      "hypothesis": "Forcing explicit section-graph depth requirements will reduce short-page outputs and improve section rhythm versus version-13.",
+      "mutationAxis": "2. Section graph diversity",
+      "keepDrop": "Keep. Net score improved and portability gate passed.",
+      "scoreOutOf20": 12,
+      "routes": [
+        {
+          "id": "1",
+          "slug": "1",
+          "path": "/1",
+          "screenshot": "/experiment-assets/version-14/route-1.png"
+        },
+        {
+          "id": "2",
+          "slug": "2",
+          "path": "/2",
+          "screenshot": "/experiment-assets/version-14/route-2.png"
+        },
+        {
+          "id": "3",
+          "slug": "3",
+          "path": "/3",
+          "screenshot": "/experiment-assets/version-14/route-3.png"
+        },
+        {
+          "id": "4",
+          "slug": "4",
+          "path": "/4",
+          "screenshot": "/experiment-assets/version-14/route-4.png"
+        },
+        {
+          "id": "5",
+          "slug": "5",
+          "path": "/5",
+          "screenshot": "/experiment-assets/version-14/route-5.png"
+        }
+      ]
+    },
+    {
+      "version": "version-15",
+      "versionNumber": 15,
+      "title": "Version 15",
+      "readmePath": "/experiment-docs/version-15/README.md",
+      "critiquesPath": "/experiment-docs/version-15/CRITQUES.md",
+      "hypothesis": "Explicit anti-repetition and payload continuity guards will reduce sparse middle-page zones and improve visual finish consistency without sacrificing route diversity.",
+      "mutationAxis": "7. Anti-repetition guards",
+      "keepDrop": "Keep. Large positive score delta and portability gate passed.",
+      "scoreOutOf20": 13.9,
+      "routes": [
+        {
+          "id": "1",
+          "slug": "1",
+          "path": "/1",
+          "screenshot": "/experiment-assets/version-15/route-1.png"
+        },
+        {
+          "id": "2",
+          "slug": "2",
+          "path": "/2",
+          "screenshot": "/experiment-assets/version-15/route-2.png"
+        },
+        {
+          "id": "3",
+          "slug": "3",
+          "path": "/3",
+          "screenshot": "/experiment-assets/version-15/route-3.png"
+        },
+        {
+          "id": "4",
+          "slug": "4",
+          "path": "/4",
+          "screenshot": "/experiment-assets/version-15/route-4.png"
+        },
+        {
+          "id": "5",
+          "slug": "5",
+          "path": "/5",
+          "screenshot": "/experiment-assets/version-15/route-5.png"
+        }
+      ]
+    },
+    {
+      "version": "version-16",
+      "versionNumber": 16,
+      "title": "Version 16",
+      "readmePath": "/experiment-docs/version-16/README.md",
+      "critiquesPath": "/experiment-docs/version-16/CRITQUES.md",
+      "hypothesis": "Enforcing explicit stateful interactions per route will increase perceived product realism and lift interaction quality without sacrificing layout polish.",
+      "mutationAxis": "5. Interaction depth",
+      "keepDrop": "Keep. Score improved and portability gate passed (no banned markers or benchmark/process leakage in SKILL.md).",
+      "scoreOutOf20": 14.5,
+      "routes": [
+        {
+          "id": "1",
+          "slug": "1",
+          "path": "/1",
+          "screenshot": "/experiment-assets/version-16/route-1.png"
+        },
+        {
+          "id": "2",
+          "slug": "2",
+          "path": "/2",
+          "screenshot": "/experiment-assets/version-16/route-2.png"
+        },
+        {
+          "id": "3",
+          "slug": "3",
+          "path": "/3",
+          "screenshot": "/experiment-assets/version-16/route-3.png"
+        },
+        {
+          "id": "4",
+          "slug": "4",
+          "path": "/4",
+          "screenshot": "/experiment-assets/version-16/route-4.png"
+        },
+        {
+          "id": "5",
+          "slug": "5",
+          "path": "/5",
+          "screenshot": "/experiment-assets/version-16/route-5.png"
+        }
+      ]
+    },
+    {
+      "version": "version-17",
+      "versionNumber": 17,
+      "title": "Version 17",
+      "readmePath": "/experiment-docs/version-17/README.md",
+      "critiquesPath": "/experiment-docs/version-17/CRITQUES.md",
+      "hypothesis": "Applying domain-specific copy pressure will improve text economy and product credibility by replacing generic marketing filler with concrete workflow language.",
+      "mutationAxis": "8. Domain-specific copy pressure",
+      "keepDrop": "Keep. Score improved and portability gate passed (no banned markers or benchmark/process leakage in SKILL.md).",
+      "scoreOutOf20": 15.1,
+      "routes": [
+        {
+          "id": "1",
+          "slug": "1",
+          "path": "/1",
+          "screenshot": "/experiment-assets/version-17/route-1.png"
+        },
+        {
+          "id": "2",
+          "slug": "2",
+          "path": "/2",
+          "screenshot": "/experiment-assets/version-17/route-2.png"
+        },
+        {
+          "id": "3",
+          "slug": "3",
+          "path": "/3",
+          "screenshot": "/experiment-assets/version-17/route-3.png"
+        },
+        {
+          "id": "4",
+          "slug": "4",
+          "path": "/4",
+          "screenshot": "/experiment-assets/version-17/route-4.png"
+        },
+        {
+          "id": "5",
+          "slug": "5",
+          "path": "/5",
+          "screenshot": "/experiment-assets/version-17/route-5.png"
+        }
+      ]
+    },
+    {
+      "version": "version-18",
+      "versionNumber": 18,
+      "title": "Version 18",
+      "readmePath": "/experiment-docs/version-18/README.md",
+      "critiquesPath": "/experiment-docs/version-18/CRITQUES.md",
+      "hypothesis": "Adding an explicit information pacing and breathing-space guard will reduce cognitive load, improve first-scan clarity, and preserve the cleaner minimal feel seen in version-15 while avoiding sparse dead zones.",
+      "mutationAxis": "4. Spatial thesis (information pacing + breathing space)",
+      "keepDrop": "Keep. Score improved and portability gate passed (no banned markers or benchmark/process leakage in SKILL.md).",
+      "scoreOutOf20": 15,
+      "routes": [
+        {
+          "id": "1",
+          "slug": "1",
+          "path": "/1",
+          "screenshot": "/experiment-assets/version-18/route-1.png"
+        },
+        {
+          "id": "2",
+          "slug": "2",
+          "path": "/2",
+          "screenshot": "/experiment-assets/version-18/route-2.png"
+        },
+        {
+          "id": "3",
+          "slug": "3",
+          "path": "/3",
+          "screenshot": "/experiment-assets/version-18/route-3.png"
+        },
+        {
+          "id": "4",
+          "slug": "4",
+          "path": "/4",
+          "screenshot": "/experiment-assets/version-18/route-4.png"
+        },
+        {
+          "id": "5",
+          "slug": "5",
+          "path": "/5",
+          "screenshot": "/experiment-assets/version-18/route-5.png"
+        }
+      ]
+    },
+    {
+      "version": "version-19",
+      "versionNumber": 19,
+      "title": "Version 19",
+      "readmePath": "/experiment-docs/version-19/README.md",
+      "critiquesPath": "/experiment-docs/version-19/CRITQUES.md",
+      "hypothesis": "Adding explicit anti-repetition rules for typography archetypes and contrast intent will reduce recurring default visual signatures (same font rhythm, same high-contrast palette behavior) and increase cross-concept differentiation without sacrificing clarity.",
+      "mutationAxis": "Axis: 7 (Anti-repetition guards)",
+      "keepDrop": "Keep. Net score improved and portability gate passed (no banned markers or benchmark-process wording in SKILL.md).",
+      "scoreOutOf20": 15.3,
+      "routes": [
+        {
+          "id": "1",
+          "slug": "1",
+          "path": "/1",
+          "screenshot": "/experiment-assets/version-19/route-1.png"
+        },
+        {
+          "id": "2",
+          "slug": "2",
+          "path": "/2",
+          "screenshot": "/experiment-assets/version-19/route-2.png"
+        },
+        {
+          "id": "3",
+          "slug": "3",
+          "path": "/3",
+          "screenshot": "/experiment-assets/version-19/route-3.png"
+        },
+        {
+          "id": "4",
+          "slug": "4",
+          "path": "/4",
+          "screenshot": "/experiment-assets/version-19/route-4.png"
+        },
+        {
+          "id": "5",
+          "slug": "5",
+          "path": "/5",
+          "screenshot": "/experiment-assets/version-19/route-5.png"
+        }
+      ]
+    },
+    {
+      "version": "version-20",
+      "versionNumber": 20,
+      "title": "Version 20",
+      "readmePath": "/experiment-docs/version-20/README.md",
+      "critiquesPath": "/experiment-docs/version-20/CRITQUES.md",
+      "hypothesis": "Adding explicit outcome-focused interaction rules will reduce static mock-interface behavior and improve interaction quality without regressing typography, spacing, or style diversity gains from version-19.",
+      "mutationAxis": "Axis: 5 (Interaction depth)",
+      "keepDrop": "Keep. Net score improved and portability gate passed (no banned markers or benchmark-process wording in SKILL.md).",
+      "scoreOutOf20": 15.9,
+      "routes": [
+        {
+          "id": "1",
+          "slug": "1",
+          "path": "/1",
+          "screenshot": "/experiment-assets/version-20/route-1.png"
+        },
+        {
+          "id": "2",
+          "slug": "2",
+          "path": "/2",
+          "screenshot": "/experiment-assets/version-20/route-2.png"
+        },
+        {
+          "id": "3",
+          "slug": "3",
+          "path": "/3",
+          "screenshot": "/experiment-assets/version-20/route-3.png"
+        },
+        {
+          "id": "4",
+          "slug": "4",
+          "path": "/4",
+          "screenshot": "/experiment-assets/version-20/route-4.png"
+        },
+        {
+          "id": "5",
+          "slug": "5",
+          "path": "/5",
+          "screenshot": "/experiment-assets/version-20/route-5.png"
+        }
+      ]
+    },
+    {
+      "version": "version-21",
+      "versionNumber": 21,
+      "title": "Version 21",
+      "readmePath": "/experiment-docs/version-21/README.md",
+      "critiquesPath": "/experiment-docs/version-21/CRITQUES.md",
+      "hypothesis": "Adding explicit layout-archetype rotation rules will reduce recurring panel-board skeletons across concepts, improving structural diversity and lowering perceived sameness without reducing interaction clarity.",
+      "mutationAxis": "Axis: 4 (Spatial thesis)",
+      "keepDrop": "Keep. Net score improved and portability gate passed (no banned markers or benchmark-process wording in SKILL.md).",
+      "scoreOutOf20": 16.2,
+      "routes": [
+        {
+          "id": "1",
+          "slug": "1",
+          "path": "/1",
+          "screenshot": "/experiment-assets/version-21/route-1.png"
+        },
+        {
+          "id": "2",
+          "slug": "2",
+          "path": "/2",
+          "screenshot": "/experiment-assets/version-21/route-2.png"
+        },
+        {
+          "id": "3",
+          "slug": "3",
+          "path": "/3",
+          "screenshot": "/experiment-assets/version-21/route-3.png"
+        },
+        {
+          "id": "4",
+          "slug": "4",
+          "path": "/4",
+          "screenshot": "/experiment-assets/version-21/route-4.png"
+        },
+        {
+          "id": "5",
+          "slug": "5",
+          "path": "/5",
+          "screenshot": "/experiment-assets/version-21/route-5.png"
+        }
+      ]
+    },
+    {
+      "version": "version-22",
+      "versionNumber": 22,
+      "title": "Version 22",
+      "readmePath": "/experiment-docs/version-22/README.md",
+      "critiquesPath": "/experiment-docs/version-22/CRITQUES.md",
+      "hypothesis": "Enforcing explicit style-family locking with a declared typography hierarchy per concept will reduce recurring font/weight/color defaults and produce stronger route-to-route identity separation.",
+      "mutationAxis": "Axis: 3 (Typography identity)",
+      "keepDrop": "Keep. Net score improved and portability gate passed (no banned markers or benchmark-process wording in SKILL.md).",
+      "scoreOutOf20": 16.9,
+      "routes": [
+        {
+          "id": "1",
+          "slug": "1",
+          "path": "/1",
+          "screenshot": "/experiment-assets/version-22/route-1.png"
+        },
+        {
+          "id": "2",
+          "slug": "2",
+          "path": "/2",
+          "screenshot": "/experiment-assets/version-22/route-2.png"
+        },
+        {
+          "id": "3",
+          "slug": "3",
+          "path": "/3",
+          "screenshot": "/experiment-assets/version-22/route-3.png"
+        },
+        {
+          "id": "4",
+          "slug": "4",
+          "path": "/4",
+          "screenshot": "/experiment-assets/version-22/route-4.png"
+        },
+        {
+          "id": "5",
+          "slug": "5",
+          "path": "/5",
+          "screenshot": "/experiment-assets/version-22/route-5.png"
+        }
+      ]
+    }
+  ]
 }

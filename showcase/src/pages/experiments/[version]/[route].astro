@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import type { Experiment, ExperimentRoute } from '../../../lib/experiments';
+import { getAllExperiments } from '../../../lib/experiments';
+
+export function getStaticPaths() {
+  const paths = [];
+
+  for (const experiment of getAllExperiments()) {
+    for (const route of experiment.routes) {
+      paths.push({
+        params: {
+          version: experiment.version,
+          route: route.slug
+        },
+        props: {
+          experiment,
+          route
+        }
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { experiment, route } = Astro.props as {
+  experiment: Experiment;
+  route: ExperimentRoute;
+};
+
+const previousRoute = experiment.routes.find((candidate) => Number(candidate.id) === Number(route.id) - 1) || null;
+const nextRoute = experiment.routes.find((candidate) => Number(candidate.id) === Number(route.id) + 1) || null;
+---
+
+<BaseLayout
+  title={`${experiment.title} ${route.path} | Codex Frontend Lab`}
+  description={`Route ${route.path} result for ${experiment.version}`}
+>
+  <section class="container page-head">
+    <p class="eyebrow">{experiment.version}</p>
+    <h1>{experiment.title} Route {route.path}</h1>
+    <p>Result snapshot for one route in this experiment iteration.</p>
+  </section>
+
+  <section class="container route-stage">
+    <div class="route-frame">
+      {route.screenshot ? (
+        <img src={route.screenshot} alt={`${experiment.title} route ${route.path} full-page screenshot`} loading="eager" />
+      ) : (
+        <div class="missing-shot large">Screenshot missing for this route</div>
+      )}
+    </div>
+  </section>
+
+  <section class="container route-pagination">
+    {previousRoute ? (
+      <a href={`/experiments/${experiment.version}/${previousRoute.slug}`} class="btn btn-ghost">Previous route</a>
+    ) : (
+      <span></span>
+    )}
+    <a href={`/experiments/${experiment.version}`} class="btn btn-ghost">Back to version</a>
+    {nextRoute ? (
+      <a href={`/experiments/${experiment.version}/${nextRoute.slug}`} class="btn btn-primary">Next route</a>
+    ) : (
+      <span></span>
+    )}
+  </section>
+</BaseLayout>
