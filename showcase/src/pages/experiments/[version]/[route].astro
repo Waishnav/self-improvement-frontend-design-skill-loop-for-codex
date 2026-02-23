@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import FeedbackForm from '../../../components/FeedbackForm';
+import LiveExperimentFrame from '../../../components/LiveExperimentFrame';
 import type { Experiment, ExperimentRoute } from '../../../lib/experiments';
 import { getAllExperiments } from '../../../lib/experiments';
 
@@ -41,7 +42,17 @@ const nextRoute = experiment.routes.find((candidate) => Number(candidate.id) ===
   <section class="container page-head">
     <p class="eyebrow">{experiment.version}</p>
     <h1>{experiment.title} Route {route.path}</h1>
-    <p>Result snapshot for one route in this experiment iteration.</p>
+    <p>Compare the static capture with the live interactive rendering inside iframe.</p>
+  </section>
+
+  <section class="container">
+    <LiveExperimentFrame
+      client:load
+      version={experiment.version}
+      appHomeUrl={experiment.appHomeUrl}
+      routes={experiment.routes}
+      initialRouteId={route.id}
+    />
   </section>
 
   <section class="container route-stage">

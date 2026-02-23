@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import LiveExperimentFrame from '../../components/LiveExperimentFrame';
 import type { Experiment } from '../../lib/experiments';
 import { getAllExperiments } from '../../lib/experiments';
 
@@ -23,6 +24,16 @@ const { experiment } = Astro.props as { experiment: Experiment };
       <p><strong>Score:</strong> {experiment.scoreOutOf20 !== null ? `${experiment.scoreOutOf20.toFixed(1)} / 20` : 'Not available'}</p>
       <p><strong>Decision:</strong> {experiment.keepDrop}</p>
     </div>
+  </section>
+
+  <section class="container">
+    <LiveExperimentFrame
+      client:load
+      version={experiment.version}
+      appHomeUrl={experiment.appHomeUrl}
+      routes={experiment.routes}
+      initialRouteId="1"
+    />
   </section>
 
   <section class="container route-grid" aria-label="Route Results">

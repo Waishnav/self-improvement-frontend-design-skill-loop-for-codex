@@ -1,4 +1,4 @@
-import { copyFile, mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises';
+import { copyFile, cp, mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -46,6 +46,29 @@ async function fileExists(filePath) {
   }
 }
 
+async function directoryExists(directoryPath) {
+  try {
+    const details = await stat(directoryPath);
+    return details.isDirectory();
+  } catch {
+    return false;
+  }
+}
+
+function rewriteAppAssetPaths(html, version) {
+  return html
+    .replace(/(["'])\/assets\//g, `$1/experiment-apps/${version}/assets/`)
+    .replace(/(["'])\/vite\.svg/g, `$1/experiment-apps/${version}/vite.svg`);
+}
+
+function addRouteBootstrap(html, routeId) {
+  const bootScript = `<script>history.replaceState({}, '', '/${routeId}');</script>`;
+  if (html.includes('<script type="module"')) {
+    return html.replace('<script type="module"', `${bootScript}\n    <script type="module"`);
+  }
+  return html.replace('</body>', `  ${bootScript}\n  </body>`);
+}
+
 function compareByVersion(a, b) {
   return a.versionNumber - b.versionNumber;
 }
@@ -55,12 +78,15 @@ const repoRoot = path.resolve(showcaseRoot, '..');
 const experimentsRoot = path.join(repoRoot, 'experiments');
 const publicAssetsRoot = path.join(showcaseRoot, 'public', 'experiment-assets');
 const publicDocsRoot = path.join(showcaseRoot, 'public', 'experiment-docs');
+const publicAppsRoot = path.join(showcaseRoot, 'public', 'experiment-apps');
 const manifestPath = path.join(showcaseRoot, 'src', 'data', 'experiments.generated.json');
 
 await rm(publicAssetsRoot, { recursive: true, force: true });
 await mkdir(publicAssetsRoot, { recursive: true });
 await rm(publicDocsRoot, { recursive: true, force: true });
 await mkdir(publicDocsRoot, { recursive: true });
+await rm(publicAppsRoot, { recursive: true, force: true });
+await mkdir(publicAppsRoot, { recursive: true });
 
 const entries = await readdir(experimentsRoot, { withFileTypes: true });
 const versions = entries
@@ -88,6 +114,29 @@ for (const current of versions) {
   const hypothesis = firstNonEmptyLine(extractSection(readmeContent, 'Hypothesis'));
   const mutationAxis = firstNonEmptyLine(extractSection(readmeContent, 'Mutation Axis'));
   const keepDrop = firstNonEmptyLine(extractSection(readmeContent, 'Keep / Drop'));
+  const appDistDir = path.join(versionDir, 't4-canvas', 'dist');
+  const appTargetDir = path.join(publicAppsRoot, current.version);
+  const hasAppDist = await directoryExists(appDistDir);
+  let appHomeUrl = null;
+
+  if (hasAppDist) {
+    await cp(appDistDir, appTargetDir, { recursive: true, force: true });
+    const appIndexPath = path.join(appTargetDir, 'index.html');
+    if (await fileExists(appIndexPath)) {
+      const indexContent = await readFile(appIndexPath, 'utf8');
+      const rewrittenIndex = rewriteAppAssetPaths(indexContent, current.version);
+      await writeFile(appIndexPath, rewrittenIndex);
+
+      const routeEntryPointDir = path.join(appTargetDir, 'routes');
+      await mkdir(routeEntryPointDir, { recursive: true });
+      for (const routeId of routeIds) {
+        const routeHtml = addRouteBootstrap(rewrittenIndex, routeId);
+        await writeFile(path.join(routeEntryPointDir, `${routeId}.html`), routeHtml);
+      }
+
+      appHomeUrl = `/experiment-apps/${current.version}/index.html`;
+    }
+  }
 
   const routeEntries = [];
 
@@ -120,7 +169,8 @@ for (const current of versions) {
       id: routeId,
       slug: routeId,
       path: `/${routeId}`,
-      screenshot
+      screenshot,
+      liveUrl: appHomeUrl ? `/experiment-apps/${current.version}/routes/${routeId}.html` : null
     });
   }
 
@@ -146,6 +196,7 @@ for (const current of versions) {
     mutationAxis: mutationAxis || 'Mutation axis not stated.',
     keepDrop: keepDrop || 'No explicit keep/drop summary.',
     scoreOutOf20: scoreMatch ? Number(scoreMatch[1]) : null,
+    appHomeUrl,
     routes: routeEntries
   });
 }

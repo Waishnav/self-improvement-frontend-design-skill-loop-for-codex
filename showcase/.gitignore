@@ -1,5 +1,7 @@
 node_modules
 .astro
 dist
+.env
 public/experiment-assets
 public/experiment-docs
+public/experiment-apps

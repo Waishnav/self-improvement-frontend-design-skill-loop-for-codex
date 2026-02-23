@@ -11,36 +11,42 @@
       "mutationAxis": "Mutation axis not stated.",
       "keepDrop": "No explicit keep/drop summary.",
       "scoreOutOf20": null,
+      "appHomeUrl": "/experiment-apps/version-1/index.html",
       "routes": [
         {
           "id": "1",
           "slug": "1",
           "path": "/1",
-          "screenshot": "/experiment-assets/version-1/route-1.png"
+          "screenshot": "/experiment-assets/version-1/route-1.png",
+          "liveUrl": "/experiment-apps/version-1/routes/1.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
-          "screenshot": "/experiment-assets/version-1/route-2.png"
+          "screenshot": "/experiment-assets/version-1/route-2.png",
+          "liveUrl": "/experiment-apps/version-1/routes/2.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
-          "screenshot": "/experiment-assets/version-1/route-3.png"
+          "screenshot": "/experiment-assets/version-1/route-3.png",
+          "liveUrl": "/experiment-apps/version-1/routes/3.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
-          "screenshot": "/experiment-assets/version-1/route-4.png"
+          "screenshot": "/experiment-assets/version-1/route-4.png",
+          "liveUrl": "/experiment-apps/version-1/routes/4.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
-          "screenshot": "/experiment-assets/version-1/route-5.png"
+          "screenshot": "/experiment-assets/version-1/route-5.png",
+          "liveUrl": "/experiment-apps/version-1/routes/5.html"
         }
       ]
     },
@@ -54,36 +60,42 @@
       "mutationAxis": "Mutation axis not stated.",
       "keepDrop": "No explicit keep/drop summary.",
       "scoreOutOf20": null,
+      "appHomeUrl": "/experiment-apps/version-2/index.html",
       "routes": [
         {
           "id": "1",
           "slug": "1",
           "path": "/1",
-          "screenshot": "/experiment-assets/version-2/route-1.png"
+          "screenshot": "/experiment-assets/version-2/route-1.png",
+          "liveUrl": "/experiment-apps/version-2/routes/1.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
-          "screenshot": "/experiment-assets/version-2/route-2.png"
+          "screenshot": "/experiment-assets/version-2/route-2.png",
+          "liveUrl": "/experiment-apps/version-2/routes/2.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
-          "screenshot": "/experiment-assets/version-2/route-3.png"
+          "screenshot": "/experiment-assets/version-2/route-3.png",
+          "liveUrl": "/experiment-apps/version-2/routes/3.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
-          "screenshot": "/experiment-assets/version-2/route-4.png"
+          "screenshot": "/experiment-assets/version-2/route-4.png",
+          "liveUrl": "/experiment-apps/version-2/routes/4.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
-          "screenshot": "/experiment-assets/version-2/route-5.png"
+          "screenshot": "/experiment-assets/version-2/route-5.png",
+          "liveUrl": "/experiment-apps/version-2/routes/5.html"
         }
       ]
     },
@@ -97,36 +109,42 @@
       "mutationAxis": "10. Reliability and overflow gates",
       "keepDrop": "Keep (seed baseline for this run; initial iteration has no prior in-run comparator). Next iteration will target section-graph depth and rhythm.",
       "scoreOutOf20": 11.8,
+      "appHomeUrl": "/experiment-apps/version-13/index.html",
       "routes": [
         {
           "id": "1",
           "slug": "1",
           "path": "/1",
-          "screenshot": "/experiment-assets/version-13/route-1.png"
+          "screenshot": "/experiment-assets/version-13/route-1.png",
+          "liveUrl": "/experiment-apps/version-13/routes/1.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
-          "screenshot": "/experiment-assets/version-13/route-2.png"
+          "screenshot": "/experiment-assets/version-13/route-2.png",
+          "liveUrl": "/experiment-apps/version-13/routes/2.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
-          "screenshot": "/experiment-assets/version-13/route-3.png"
+          "screenshot": "/experiment-assets/version-13/route-3.png",
+          "liveUrl": "/experiment-apps/version-13/routes/3.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
-          "screenshot": "/experiment-assets/version-13/route-4.png"
+          "screenshot": "/experiment-assets/version-13/route-4.png",
+          "liveUrl": "/experiment-apps/version-13/routes/4.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
-          "screenshot": "/experiment-assets/version-13/route-5.png"
+          "screenshot": "/experiment-assets/version-13/route-5.png",
+          "liveUrl": "/experiment-apps/version-13/routes/5.html"
         }
       ]
     },
@@ -140,36 +158,42 @@
       "mutationAxis": "2. Section graph diversity",
       "keepDrop": "Keep. Net score improved and portability gate passed.",
       "scoreOutOf20": 12,
+      "appHomeUrl": "/experiment-apps/version-14/index.html",
       "routes": [
         {
           "id": "1",
           "slug": "1",
           "path": "/1",
-          "screenshot": "/experiment-assets/version-14/route-1.png"
+          "screenshot": "/experiment-assets/version-14/route-1.png",
+          "liveUrl": "/experiment-apps/version-14/routes/1.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
-          "screenshot": "/experiment-assets/version-14/route-2.png"
+          "screenshot": "/experiment-assets/version-14/route-2.png",
+          "liveUrl": "/experiment-apps/version-14/routes/2.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
-          "screenshot": "/experiment-assets/version-14/route-3.png"
+          "screenshot": "/experiment-assets/version-14/route-3.png",
+          "liveUrl": "/experiment-apps/version-14/routes/3.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
-          "screenshot": "/experiment-assets/version-14/route-4.png"
+          "screenshot": "/experiment-assets/version-14/route-4.png",
+          "liveUrl": "/experiment-apps/version-14/routes/4.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
-          "screenshot": "/experiment-assets/version-14/route-5.png"
+          "screenshot": "/experiment-assets/version-14/route-5.png",
+          "liveUrl": "/experiment-apps/version-14/routes/5.html"
         }
       ]
     },
@@ -183,36 +207,42 @@
       "mutationAxis": "7. Anti-repetition guards",
       "keepDrop": "Keep. Large positive score delta and portability gate passed.",
       "scoreOutOf20": 13.9,
+      "appHomeUrl": "/experiment-apps/version-15/index.html",
       "routes": [
         {
           "id": "1",
           "slug": "1",
           "path": "/1",
-          "screenshot": "/experiment-assets/version-15/route-1.png"
+          "screenshot": "/experiment-assets/version-15/route-1.png",
+          "liveUrl": "/experiment-apps/version-15/routes/1.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
-          "screenshot": "/experiment-assets/version-15/route-2.png"
+          "screenshot": "/experiment-assets/version-15/route-2.png",
+          "liveUrl": "/experiment-apps/version-15/routes/2.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
-          "screenshot": "/experiment-assets/version-15/route-3.png"
+          "screenshot": "/experiment-assets/version-15/route-3.png",
+          "liveUrl": "/experiment-apps/version-15/routes/3.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
-          "screenshot": "/experiment-assets/version-15/route-4.png"
+          "screenshot": "/experiment-assets/version-15/route-4.png",
+          "liveUrl": "/experiment-apps/version-15/routes/4.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
-          "screenshot": "/experiment-assets/version-15/route-5.png"
+          "screenshot": "/experiment-assets/version-15/route-5.png",
+          "liveUrl": "/experiment-apps/version-15/routes/5.html"
         }
       ]
     },
@@ -226,36 +256,42 @@
       "mutationAxis": "5. Interaction depth",
       "keepDrop": "Keep. Score improved and portability gate passed (no banned markers or benchmark/process leakage in SKILL.md).",
       "scoreOutOf20": 14.5,
+      "appHomeUrl": "/experiment-apps/version-16/index.html",
       "routes": [
         {
           "id": "1",
           "slug": "1",
           "path": "/1",
-          "screenshot": "/experiment-assets/version-16/route-1.png"
+          "screenshot": "/experiment-assets/version-16/route-1.png",
+          "liveUrl": "/experiment-apps/version-16/routes/1.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
-          "screenshot": "/experiment-assets/version-16/route-2.png"
+          "screenshot": "/experiment-assets/version-16/route-2.png",
+          "liveUrl": "/experiment-apps/version-16/routes/2.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
-          "screenshot": "/experiment-assets/version-16/route-3.png"
+          "screenshot": "/experiment-assets/version-16/route-3.png",
+          "liveUrl": "/experiment-apps/version-16/routes/3.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
-          "screenshot": "/experiment-assets/version-16/route-4.png"
+          "screenshot": "/experiment-assets/version-16/route-4.png",
+          "liveUrl": "/experiment-apps/version-16/routes/4.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
-          "screenshot": "/experiment-assets/version-16/route-5.png"
+          "screenshot": "/experiment-assets/version-16/route-5.png",
+          "liveUrl": "/experiment-apps/version-16/routes/5.html"
         }
       ]
     },
@@ -269,36 +305,42 @@
       "mutationAxis": "8. Domain-specific copy pressure",
       "keepDrop": "Keep. Score improved and portability gate passed (no banned markers or benchmark/process leakage in SKILL.md).",
       "scoreOutOf20": 15.1,
+      "appHomeUrl": "/experiment-apps/version-17/index.html",
       "routes": [
         {
           "id": "1",
           "slug": "1",
           "path": "/1",
-          "screenshot": "/experiment-assets/version-17/route-1.png"
+          "screenshot": "/experiment-assets/version-17/route-1.png",
+          "liveUrl": "/experiment-apps/version-17/routes/1.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
-          "screenshot": "/experiment-assets/version-17/route-2.png"
+          "screenshot": "/experiment-assets/version-17/route-2.png",
+          "liveUrl": "/experiment-apps/version-17/routes/2.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
-          "screenshot": "/experiment-assets/version-17/route-3.png"
+          "screenshot": "/experiment-assets/version-17/route-3.png",
+          "liveUrl": "/experiment-apps/version-17/routes/3.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
-          "screenshot": "/experiment-assets/version-17/route-4.png"
+          "screenshot": "/experiment-assets/version-17/route-4.png",
+          "liveUrl": "/experiment-apps/version-17/routes/4.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
-          "screenshot": "/experiment-assets/version-17/route-5.png"
+          "screenshot": "/experiment-assets/version-17/route-5.png",
+          "liveUrl": "/experiment-apps/version-17/routes/5.html"
         }
       ]
     },
@@ -312,36 +354,42 @@
       "mutationAxis": "4. Spatial thesis (information pacing + breathing space)",
       "keepDrop": "Keep. Score improved and portability gate passed (no banned markers or benchmark/process leakage in SKILL.md).",
       "scoreOutOf20": 15,
+      "appHomeUrl": "/experiment-apps/version-18/index.html",
       "routes": [
         {
           "id": "1",
           "slug": "1",
           "path": "/1",
-          "screenshot": "/experiment-assets/version-18/route-1.png"
+          "screenshot": "/experiment-assets/version-18/route-1.png",
+          "liveUrl": "/experiment-apps/version-18/routes/1.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
-          "screenshot": "/experiment-assets/version-18/route-2.png"
+          "screenshot": "/experiment-assets/version-18/route-2.png",
+          "liveUrl": "/experiment-apps/version-18/routes/2.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
-          "screenshot": "/experiment-assets/version-18/route-3.png"
+          "screenshot": "/experiment-assets/version-18/route-3.png",
+          "liveUrl": "/experiment-apps/version-18/routes/3.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
-          "screenshot": "/experiment-assets/version-18/route-4.png"
+          "screenshot": "/experiment-assets/version-18/route-4.png",
+          "liveUrl": "/experiment-apps/version-18/routes/4.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
-          "screenshot": "/experiment-assets/version-18/route-5.png"
+          "screenshot": "/experiment-assets/version-18/route-5.png",
+          "liveUrl": "/experiment-apps/version-18/routes/5.html"
         }
       ]
     },
@@ -355,36 +403,42 @@
       "mutationAxis": "Axis: 7 (Anti-repetition guards)",
       "keepDrop": "Keep. Net score improved and portability gate passed (no banned markers or benchmark-process wording in SKILL.md).",
       "scoreOutOf20": 15.3,
+      "appHomeUrl": "/experiment-apps/version-19/index.html",
       "routes": [
         {
           "id": "1",
           "slug": "1",
           "path": "/1",
-          "screenshot": "/experiment-assets/version-19/route-1.png"
+          "screenshot": "/experiment-assets/version-19/route-1.png",
+          "liveUrl": "/experiment-apps/version-19/routes/1.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
-          "screenshot": "/experiment-assets/version-19/route-2.png"
+          "screenshot": "/experiment-assets/version-19/route-2.png",
+          "liveUrl": "/experiment-apps/version-19/routes/2.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
-          "screenshot": "/experiment-assets/version-19/route-3.png"
+          "screenshot": "/experiment-assets/version-19/route-3.png",
+          "liveUrl": "/experiment-apps/version-19/routes/3.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
-          "screenshot": "/experiment-assets/version-19/route-4.png"
+          "screenshot": "/experiment-assets/version-19/route-4.png",
+          "liveUrl": "/experiment-apps/version-19/routes/4.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
-          "screenshot": "/experiment-assets/version-19/route-5.png"
+          "screenshot": "/experiment-assets/version-19/route-5.png",
+          "liveUrl": "/experiment-apps/version-19/routes/5.html"
         }
       ]
     },
@@ -398,36 +452,42 @@
       "mutationAxis": "Axis: 5 (Interaction depth)",
       "keepDrop": "Keep. Net score improved and portability gate passed (no banned markers or benchmark-process wording in SKILL.md).",
       "scoreOutOf20": 15.9,
+      "appHomeUrl": "/experiment-apps/version-20/index.html",
       "routes": [
         {
           "id": "1",
           "slug": "1",
           "path": "/1",
-          "screenshot": "/experiment-assets/version-20/route-1.png"
+          "screenshot": "/experiment-assets/version-20/route-1.png",
+          "liveUrl": "/experiment-apps/version-20/routes/1.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
-          "screenshot": "/experiment-assets/version-20/route-2.png"
+          "screenshot": "/experiment-assets/version-20/route-2.png",
+          "liveUrl": "/experiment-apps/version-20/routes/2.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
-          "screenshot": "/experiment-assets/version-20/route-3.png"
+          "screenshot": "/experiment-assets/version-20/route-3.png",
+          "liveUrl": "/experiment-apps/version-20/routes/3.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
-          "screenshot": "/experiment-assets/version-20/route-4.png"
+          "screenshot": "/experiment-assets/version-20/route-4.png",
+          "liveUrl": "/experiment-apps/version-20/routes/4.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
-          "screenshot": "/experiment-assets/version-20/route-5.png"
+          "screenshot": "/experiment-assets/version-20/route-5.png",
+          "liveUrl": "/experiment-apps/version-20/routes/5.html"
         }
       ]
     },
@@ -441,36 +501,42 @@
       "mutationAxis": "Axis: 4 (Spatial thesis)",
       "keepDrop": "Keep. Net score improved and portability gate passed (no banned markers or benchmark-process wording in SKILL.md).",
       "scoreOutOf20": 16.2,
+      "appHomeUrl": "/experiment-apps/version-21/index.html",
       "routes": [
         {
           "id": "1",
           "slug": "1",
           "path": "/1",
-          "screenshot": "/experiment-assets/version-21/route-1.png"
+          "screenshot": "/experiment-assets/version-21/route-1.png",
+          "liveUrl": "/experiment-apps/version-21/routes/1.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
-          "screenshot": "/experiment-assets/version-21/route-2.png"
+          "screenshot": "/experiment-assets/version-21/route-2.png",
+          "liveUrl": "/experiment-apps/version-21/routes/2.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
-          "screenshot": "/experiment-assets/version-21/route-3.png"
+          "screenshot": "/experiment-assets/version-21/route-3.png",
+          "liveUrl": "/experiment-apps/version-21/routes/3.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
-          "screenshot": "/experiment-assets/version-21/route-4.png"
+          "screenshot": "/experiment-assets/version-21/route-4.png",
+          "liveUrl": "/experiment-apps/version-21/routes/4.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
-          "screenshot": "/experiment-assets/version-21/route-5.png"
+          "screenshot": "/experiment-assets/version-21/route-5.png",
+          "liveUrl": "/experiment-apps/version-21/routes/5.html"
         }
       ]
     },
@@ -484,36 +550,42 @@
       "mutationAxis": "Axis: 3 (Typography identity)",
       "keepDrop": "Keep. Net score improved and portability gate passed (no banned markers or benchmark-process wording in SKILL.md).",
       "scoreOutOf20": 16.9,
+      "appHomeUrl": "/experiment-apps/version-22/index.html",
       "routes": [
         {
           "id": "1",
           "slug": "1",
           "path": "/1",
-          "screenshot": "/experiment-assets/version-22/route-1.png"
+          "screenshot": "/experiment-assets/version-22/route-1.png",
+          "liveUrl": "/experiment-apps/version-22/routes/1.html"
         },
         {
           "id": "2",
           "slug": "2",
           "path": "/2",
-          "screenshot": "/experiment-assets/version-22/route-2.png"
+          "screenshot": "/experiment-assets/version-22/route-2.png",
+          "liveUrl": "/experiment-apps/version-22/routes/2.html"
         },
         {
           "id": "3",
           "slug": "3",
           "path": "/3",
-          "screenshot": "/experiment-assets/version-22/route-3.png"
+          "screenshot": "/experiment-assets/version-22/route-3.png",
+          "liveUrl": "/experiment-apps/version-22/routes/3.html"
         },
         {
           "id": "4",
           "slug": "4",
           "path": "/4",
-          "screenshot": "/experiment-assets/version-22/route-4.png"
+          "screenshot": "/experiment-assets/version-22/route-4.png",
+          "liveUrl": "/experiment-apps/version-22/routes/4.html"
         },
         {
           "id": "5",
           "slug": "5",
           "path": "/5",
-          "screenshot": "/experiment-assets/version-22/route-5.png"
+          "screenshot": "/experiment-assets/version-22/route-5.png",
+          "liveUrl": "/experiment-apps/version-22/routes/5.html"
         }
       ]
     }

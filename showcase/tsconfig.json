@@ -2,5 +2,11 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "baseUrl": "."
-  }
+  },
+  "exclude": [
+    "dist",
+    "public/experiment-assets",
+    "public/experiment-docs",
+    "public/experiment-apps"
+  ]
 }

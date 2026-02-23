@@ -5,6 +5,7 @@ export interface ExperimentRoute {
   slug: string;
   path: string;
   screenshot: string | null;
+  liveUrl: string | null;
 }
 
 export interface Experiment {
@@ -17,6 +18,7 @@ export interface Experiment {
   mutationAxis: string;
   keepDrop: string;
   scoreOutOf20: number | null;
+  appHomeUrl: string | null;
   routes: ExperimentRoute[];
 }
 
