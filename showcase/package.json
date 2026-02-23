@@ -1,0 +1,19 @@
+{
+  "name": "frontend-skill-showcase",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "node scripts/generate-manifest.mjs && astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "generate:manifest": "node scripts/generate-manifest.mjs"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.4.0",
+    "astro": "^5.2.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

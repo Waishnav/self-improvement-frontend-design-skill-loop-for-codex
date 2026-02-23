@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Codex Frontend Skill Research"
+  description="A visual research project on improving Codex frontend design quality via iterative skill tuning."
+>
+  <section class="hero container">
+    <p class="eyebrow">Independent Research Project</p>
+    <h1>Stretching Codex Frontend Quality Through Iterative Skill Design</h1>
+    <p class="lede">
+      This project treats visual output quality as an optimization loop: one fixed prompt, one controlled mutation at a
+      time, and route-level visual critique against high bar references.
+    </p>
+    <div class="hero-actions">
+      <a href="/experiments" class="btn btn-primary">Browse Experiment Results</a>
+      <a href="/skills" class="btn btn-ghost">Read Skill Evolution</a>
+    </div>
+  </section>
+
+  <section class="container section-grid">
+    <article class="card">
+      <h2>Why This Exists</h2>
+      <p>
+        Public model comparisons often assume one shared instruction pack transfers equally across models. This research
+        tests the opposite: frontend quality is highly instruction-sensitive and can improve significantly with deliberate
+        model-specific wording.
+      </p>
+    </article>
+    <article class="card">
+      <h2>Method</h2>
+      <p>
+        Each version modifies one primary skill axis. Outputs are generated fresh, then scored across composition,
+        typography, interaction depth, finish, readability, mobile behavior, and similarity to strong reference sets.
+      </p>
+    </article>
+    <article class="card">
+      <h2>What You Can Explore</h2>
+      <p>
+        Route-by-route screenshots for each experiment version, mutation hypotheses, scored outcomes, and eventually
+        reviewer voting feedback tied to version and route.
+      </p>
+    </article>
+  </section>
+
+  <section class="container timeline">
+    <h2>Experiment Loop</h2>
+    <ol>
+      <li>Keep benchmark prompt fixed (`prompt.md`).</li>
+      <li>Mutate one skill constraint with clear expected delta.</li>
+      <li>Generate five route variants in isolated workspace.</li>
+      <li>Capture full-page screenshots (`/1.. /5`).</li>
+      <li>Critique and score, then decide keep/drop for next version.</li>
+    </ol>
+  </section>
+</BaseLayout>

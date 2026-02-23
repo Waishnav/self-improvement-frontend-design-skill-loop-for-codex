@@ -1,0 +1,36 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Frontend skill optimization showcase' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/" class="brand">Codex Frontend Lab</a>
+      <nav class="site-nav">
+        <a href="/">Project</a>
+        <a href="/skills">Skill Evolution</a>
+        <a href="/experiments">Experiments</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>Research workflow: fixed prompt, controlled skill mutation, measurable visual scoring.</p>
+    </footer>
+  </body>
+</html>
