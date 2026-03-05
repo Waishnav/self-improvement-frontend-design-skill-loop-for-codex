@@ -1,0 +1,25 @@
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import DesignOne from './pages/DesignOne'
+import DesignTwo from './pages/DesignTwo'
+import DesignThree from './pages/DesignThree'
+import DesignFour from './pages/DesignFour'
+import DesignFive from './pages/DesignFive'
+import HomeGrid from './pages/HomeGrid'
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomeGrid />} />
+        <Route path="/1" element={<DesignOne />} />
+        <Route path="/2" element={<DesignTwo />} />
+        <Route path="/3" element={<DesignThree />} />
+        <Route path="/4" element={<DesignFour />} />
+        <Route path="/5" element={<DesignFive />} />
+        <Route path="*" element={<Navigate replace to="/" />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+export default App
