@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,600&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,500;1,600&family=Source+Sans+3:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&family=Work+Sans:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --shadow-soft: 0 20px 45px -26px rgba(46, 21, 8, 0.38);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: 'Work Sans', sans-serif;
+  background: #f2efe8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.font-display-sans {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-display-serif {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-display-mixed {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-display-bold {
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.font-blueprint-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-monograph-display {
+  font-family: 'DM Serif Display', serif;
+}
+
+.font-body {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.font-mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.paper-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.afterburn-card {
+  border: 1px solid #643a26;
+  background: linear-gradient(155deg, rgba(40, 26, 19, 0.9), rgba(12, 11, 11, 0.9));
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  transition: transform 0.45s ease, border-color 0.45s ease;
+}
+
+.afterburn-card:hover {
+  transform: translateY(-6px);
+  border-color: #f89f66;
+}
+
+.blueprint-grid {
+  background-image: linear-gradient(rgba(82, 119, 145, 0.14) 1px, transparent 1px), linear-gradient(90deg, rgba(82, 119, 145, 0.14) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.blueprint-card {
+  border: 1px solid #aac0cf;
+  background: rgba(248, 252, 255, 0.94);
+  padding: 1.25rem;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.blueprint-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 28px -20px rgba(16, 42, 60, 0.56);
+}
+
+.poster-stack {
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.45s ease;
+}
+
+.poster-stack:hover {
+  transform: rotate(-1.5deg) translateY(-4px);
+}
+
+.riot-card {
+  border-radius: 1.4rem;
+  border: 1px solid #c9b7a2;
+  background: #fffaf2;
+  padding: 1.4rem;
+  box-shadow: 0 14px 24px -22px rgba(53, 29, 16, 0.42);
+  transition: transform 0.35s ease, border-color 0.35s ease;
+}
+
+.riot-card:hover {
+  transform: translateY(-6px);
+  border-color: #b44828;
+}
+
+@media (max-width: 768px) {
+  .font-display-sans {
+    letter-spacing: 0.02em;
+  }
+}
