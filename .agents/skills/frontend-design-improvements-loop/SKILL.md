@@ -74,8 +74,10 @@ Read `references/opus_targets.md`, `references/mutation_axes.md`, and `reference
 ### 5) Capture screenshots for `/1.. /5`
 
 - Start the version app in `t4-canvas/`.
-- Use Playwriter and capture full-page screenshots for routes `/1` to `/5`.
-- Save under `experiments/version-X/screenshots/`.
+- Use Playwright CLI to capture full-page screenshots for routes `/1` to `/5` in desktop/tablet/mobile profiles.
+- Preferred command:
+  - `scripts/capture_screenshots.sh <version-dir> [base-url]`
+- Save under `experiments/version-X/screenshots/<route>/{desktop,tablet,mobile}.png`.
 
 ### 6) Critique and score
 
@@ -120,10 +122,11 @@ Each version must include:
   - rubric score delta
   - next step
 - `experiments/version-X/CRITQUES.md` with expected-vs-output critique notes
-- `experiments/version-X/screenshots/version-X-route-1.png` ... `version-X-route-5.png`
+- `experiments/version-X/screenshots/1/{desktop,tablet,mobile}.png` ... `screenshots/5/{desktop,tablet,mobile}.png`
 
 ## Scripts
 
 - `scripts/new_fresh_version.sh`
 - `scripts/new_version_from_previous.sh`
 - `scripts/run_headless_iteration.sh`
+- `scripts/capture_screenshots.sh`
