@@ -57,12 +57,16 @@ Responsive full-page captures for routes `/1` to `/5`:
 - Mobile: [screenshots/1/mobile.png](screenshots/1/mobile.png)
 - Laptop alias: [screenshots/1/laptop.png](screenshots/1/laptop.png)
 
+![Route 1 Laptop](screenshots/1/laptop.png)
+
 ### Route /2
 
 - Desktop: [screenshots/2/desktop.png](screenshots/2/desktop.png)
 - Tablet: [screenshots/2/tablet.png](screenshots/2/tablet.png)
 - Mobile: [screenshots/2/mobile.png](screenshots/2/mobile.png)
 - Laptop alias: [screenshots/2/laptop.png](screenshots/2/laptop.png)
+
+![Route 2 Laptop](screenshots/2/laptop.png)
 
 ### Route /3
 
@@ -71,6 +75,8 @@ Responsive full-page captures for routes `/1` to `/5`:
 - Mobile: [screenshots/3/mobile.png](screenshots/3/mobile.png)
 - Laptop alias: [screenshots/3/laptop.png](screenshots/3/laptop.png)
 
+![Route 3 Laptop](screenshots/3/laptop.png)
+
 ### Route /4
 
 - Desktop: [screenshots/4/desktop.png](screenshots/4/desktop.png)
@@ -78,9 +84,13 @@ Responsive full-page captures for routes `/1` to `/5`:
 - Mobile: [screenshots/4/mobile.png](screenshots/4/mobile.png)
 - Laptop alias: [screenshots/4/laptop.png](screenshots/4/laptop.png)
 
+![Route 4 Laptop](screenshots/4/laptop.png)
+
 ### Route /5
 
 - Desktop: [screenshots/5/desktop.png](screenshots/5/desktop.png)
 - Tablet: [screenshots/5/tablet.png](screenshots/5/tablet.png)
 - Mobile: [screenshots/5/mobile.png](screenshots/5/mobile.png)
 - Laptop alias: [screenshots/5/laptop.png](screenshots/5/laptop.png)
+
+![Route 5 Laptop](screenshots/5/laptop.png)

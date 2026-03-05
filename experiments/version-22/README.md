@@ -62,16 +62,16 @@ Keep. Net score improved and portability gate passed (no banned markers or bench
 Full-page screenshots for each route:
 
 ### Route /1
-![Route 1](screenshots/version-22-route-1.png)
+![Route 1 Laptop](screenshots/1/laptop.png)
 
 ### Route /2
-![Route 2](screenshots/version-22-route-2.png)
+![Route 2 Laptop](screenshots/2/laptop.png)
 
 ### Route /3
-![Route 3](screenshots/version-22-route-3.png)
+![Route 3 Laptop](screenshots/3/laptop.png)
 
 ### Route /4
-![Route 4](screenshots/version-22-route-4.png)
+![Route 4 Laptop](screenshots/4/laptop.png)
 
 ### Route /5
-![Route 5](screenshots/version-22-route-5.png)
+![Route 5 Laptop](screenshots/5/laptop.png)
