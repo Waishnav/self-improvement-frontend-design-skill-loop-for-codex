@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,500&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:wght@400;500;700&family=Karla:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&family=Work+Sans:wght@400;500;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --font-display-one: 'Syne', sans-serif;
+  --font-body-one: 'IBM Plex Sans', sans-serif;
+
+  --font-display-two: 'Cormorant Garamond', serif;
+  --font-body-two: 'Work Sans', sans-serif;
+
+  --font-display-three: 'Archivo Black', sans-serif;
+  --font-body-three: 'Karla', sans-serif;
+
+  --font-display-four: 'DM Serif Display', serif;
+  --font-body-four: 'Plus Jakarta Sans', sans-serif;
+
+  --font-display-five: 'Bebas Neue', sans-serif;
+  --font-body-five: 'Source Serif 4', serif;
+
+  --font-mono: 'Space Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  background: #07080d;
+}
+
+a {
+  color: inherit;
+}
+
+.concept-one-light {
+  background:
+    radial-gradient(circle at 18% 12%, rgba(236, 70, 242, 0.45) 0%, transparent 42%),
+    radial-gradient(circle at 80% 24%, rgba(247, 125, 15, 0.28) 0%, transparent 40%),
+    radial-gradient(circle at 40% 92%, rgba(64, 117, 255, 0.22) 0%, transparent 45%);
+}
+
+.concept-one-grain::after {
+  content: '';
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  opacity: 0.08;
+  mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 768px) {
+  .concept-one-grain::after {
+    opacity: 0.05;
+  }
+}
