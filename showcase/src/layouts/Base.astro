@@ -1,0 +1,70 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Iterative experiments improving GPT frontend design skill quality" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen bg-[var(--color-surface-0)]">
+    <nav
+      class="fixed top-0 inset-x-0 z-50 border-b border-white/[0.06] bg-[var(--color-surface-0)]/80 backdrop-blur-xl"
+    >
+      <div class="mx-auto flex max-w-[90rem] items-center justify-between px-6 py-4 lg:px-10">
+        <a href="/" class="group flex items-center gap-3">
+          <span
+            class="inline-block size-2.5 rounded-full bg-[var(--color-accent)] transition-shadow group-hover:shadow-[0_0_12px_var(--color-accent)]"
+          ></span>
+          <span class="font-[var(--font-heading)] text-xl tracking-tight text-[var(--color-ink-0)]">
+            Skill Lab
+          </span>
+        </a>
+        <div class="flex items-center gap-6 text-sm text-[var(--color-ink-2)]">
+          <a
+            href="/"
+            class="transition-colors hover:text-[var(--color-ink-0)]"
+          >
+            Gallery
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener"
+            class="transition-colors hover:text-[var(--color-ink-0)]"
+          >
+            Source
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-[4.5rem]">
+      <slot />
+    </main>
+
+    <footer class="border-t border-white/[0.04] py-8 text-center text-xs text-[var(--color-ink-2)]">
+      <p>Frontend Design Skill Experiments</p>
+    </footer>
+  </body>
+</html>

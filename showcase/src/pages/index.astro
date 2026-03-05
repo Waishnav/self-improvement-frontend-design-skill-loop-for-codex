@@ -1,0 +1,195 @@
+---
+import Base from "../layouts/Base.astro";
+import { versions, screenshotPath } from "../data/versions";
+
+const scored = versions.filter((v) => v.score !== null);
+const maxScore = Math.max(...scored.map((v) => v.score!));
+const latestScore = scored[scored.length - 1]?.score ?? 0;
+---
+
+<Base title="Skill Lab — Frontend Design Experiments">
+  {/* ── Hero ── */}
+  <section class="relative overflow-hidden">
+    {/* grain overlay */}
+    <div
+      class="pointer-events-none absolute inset-0 opacity-[0.03]"
+      style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%270 0 256 256%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter id=%27noise%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.9%27 numOctaves=%274%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23noise)%27/%3E%3C/svg%3E'); background-size: 128px 128px;"
+    >
+    </div>
+
+    <div class="mx-auto max-w-[90rem] px-6 pb-16 pt-20 lg:px-10 lg:pb-24 lg:pt-28">
+      <p
+        class="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-[var(--color-accent)]"
+      >
+        Iterative Skill Improvement
+      </p>
+      <h1
+        class="font-[var(--font-heading)] text-5xl leading-[1.1] tracking-tight text-[var(--color-ink-0)] sm:text-6xl lg:text-7xl"
+      >
+        Tuning the eye,<br />
+        <span class="italic text-[var(--color-accent-glow)]">one mutation at a time</span>
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg leading-relaxed text-[var(--color-ink-1)]">
+        Each experiment mutates a single axis of the frontend-design skill and measures output
+        quality against a 10-dimension rubric. No model weights changed — only instructions.
+      </p>
+
+      {/* stats strip */}
+      <div
+        class="mt-12 flex flex-wrap gap-8 border-t border-white/[0.06] pt-8"
+      >
+        <div>
+          <p class="text-3xl font-bold tabular-nums text-[var(--color-ink-0)]">
+            {versions.length}
+          </p>
+          <p class="mt-1 text-xs uppercase tracking-wider text-[var(--color-ink-2)]">
+            Experiments
+          </p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold tabular-nums text-[var(--color-accent-glow)]">
+            {latestScore}<span class="text-lg text-[var(--color-ink-2)]"> / 20</span>
+          </p>
+          <p class="mt-1 text-xs uppercase tracking-wider text-[var(--color-ink-2)]">
+            Latest Score
+          </p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold tabular-nums text-[var(--color-positive)]">
+            +{(latestScore - (scored[0]?.score ?? 0)).toFixed(1)}
+          </p>
+          <p class="mt-1 text-xs uppercase tracking-wider text-[var(--color-ink-2)]">
+            Total Gain
+          </p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold tabular-nums text-[var(--color-ink-0)]">
+            {versions.length * 5}
+          </p>
+          <p class="mt-1 text-xs uppercase tracking-wider text-[var(--color-ink-2)]">
+            Routes Generated
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ── Score progression sparkline ── */}
+  <section class="border-y border-white/[0.06] bg-[var(--color-surface-1)]">
+    <div class="mx-auto max-w-[90rem] px-6 py-10 lg:px-10">
+      <h2 class="mb-6 text-xs font-medium uppercase tracking-[0.2em] text-[var(--color-ink-2)]">
+        Score Progression
+      </h2>
+      <div class="flex items-end gap-1.5" style="height: 120px;">
+        {scored.map((v) => {
+          const pct = ((v.score! / 20) * 100);
+          const isMax = v.score === maxScore;
+          return (
+            <a
+              href={`/versions/${v.slug}`}
+              class="group relative flex-1"
+              style={`height: 100%;`}
+              title={`${v.slug}: ${v.score}/20`}
+            >
+              <div
+                class:list={[
+                  "absolute inset-x-0 bottom-0 rounded-t transition-colors",
+                  isMax
+                    ? "bg-[var(--color-accent)] group-hover:bg-[var(--color-accent-glow)]"
+                    : "bg-[var(--color-surface-3)] group-hover:bg-[var(--color-ink-2)]",
+                ]}
+                style={`height: ${pct}%;`}
+              />
+              <span
+                class="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-[10px] tabular-nums text-[var(--color-ink-2)] opacity-0 transition-opacity group-hover:opacity-100"
+              >
+                {v.score}
+              </span>
+              <span
+                class="absolute -bottom-5 left-1/2 -translate-x-1/2 whitespace-nowrap text-[10px] text-[var(--color-ink-2)]"
+              >
+                v{v.number}
+              </span>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  {/* ── Gallery grid ── */}
+  <section class="mx-auto max-w-[90rem] px-6 py-16 lg:px-10 lg:py-24">
+    <div class="mb-10 flex items-end justify-between">
+      <div>
+        <h2
+          class="font-[var(--font-heading)] text-3xl tracking-tight text-[var(--color-ink-0)] lg:text-4xl"
+        >
+          Experiment Gallery
+        </h2>
+        <p class="mt-2 text-sm text-[var(--color-ink-2)]">
+          Click any version to explore the live output and detailed metrics.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {versions.map((v) => (
+        <a
+          href={`/versions/${v.slug}`}
+          class="group relative overflow-hidden rounded-lg border border-white/[0.06] bg-[var(--color-surface-1)] transition-all hover:border-[var(--color-accent)]/30 hover:shadow-[0_0_40px_-12px_var(--color-accent)]"
+        >
+          {/* screenshot preview — route 1 */}
+          <div class="relative aspect-[16/10] overflow-hidden bg-[var(--color-surface-2)]">
+            <img
+              src={screenshotPath(v, 1)}
+              alt={`${v.slug} route 1 preview`}
+              loading="lazy"
+              decoding="async"
+              class="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+            />
+            {/* version badge */}
+            <span
+              class="absolute left-3 top-3 rounded bg-black/60 px-2 py-1 text-xs font-medium tabular-nums text-white/80 backdrop-blur"
+            >
+              v{v.number}
+            </span>
+            {/* score pill */}
+            {v.score !== null && (
+              <span
+                class:list={[
+                  "absolute right-3 top-3 rounded-full px-2.5 py-1 text-xs font-bold tabular-nums backdrop-blur",
+                  v.score >= 16
+                    ? "bg-[var(--color-positive)]/20 text-[var(--color-positive)]"
+                    : v.score >= 13
+                      ? "bg-[var(--color-accent)]/20 text-[var(--color-accent-glow)]"
+                      : "bg-white/10 text-[var(--color-ink-1)]",
+                ]}
+              >
+                {v.score}
+              </span>
+            )}
+          </div>
+
+          {/* card body */}
+          <div class="p-4">
+            <div class="mb-2 flex items-center gap-2">
+              <span
+                class="rounded bg-[var(--color-surface-3)] px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider text-[var(--color-ink-2)]"
+              >
+                {v.mutationAxis}
+              </span>
+              {v.delta && (
+                <span class="text-[11px] font-medium tabular-nums text-[var(--color-positive)]">
+                  {v.delta}
+                </span>
+              )}
+            </div>
+            <p class="line-clamp-2 text-sm leading-relaxed text-[var(--color-ink-1)]">
+              {v.hypothesis}
+            </p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

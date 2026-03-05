@@ -1,0 +1,19 @@
+{
+  "name": "skill-experiment-showcase",
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "prepare": "bash scripts/prepare.sh",
+    "build:full": "bash scripts/prepare.sh && astro build"
+  },
+  "dependencies": {
+    "astro": "^5.9.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.0",
+    "tailwindcss": "^4.2.0"
+  }
+}

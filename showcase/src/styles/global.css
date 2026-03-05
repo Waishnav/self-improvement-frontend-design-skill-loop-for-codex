@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Instrument Serif", "Georgia", serif;
+  --font-body: "Satoshi", "system-ui", sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+  --color-surface-0: #0c0b0a;
+  --color-surface-1: #141312;
+  --color-surface-2: #1e1c1a;
+  --color-surface-3: #2a2725;
+
+  --color-ink-0: #f5f0e8;
+  --color-ink-1: #c4bdb2;
+  --color-ink-2: #8a8279;
+
+  --color-accent: #d4a44c;
+  --color-accent-dim: #a07830;
+  --color-accent-glow: #e8c06a;
+
+  --color-positive: #5cb870;
+  --color-negative: #c75450;
+  --color-neutral: #6b9ac4;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+}
+
+@layer base {
+  html {
+    background-color: var(--color-surface-0);
+    color: var(--color-ink-0);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: var(--color-surface-0);
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-surface-3) transparent;
+  }
+}
