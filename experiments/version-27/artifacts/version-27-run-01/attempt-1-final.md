@@ -1,0 +1,1 @@
+I’ve got the direction locked. The next edit pass is the substantive one: replace the starter app with a router-backed marketing site, wire Tailwind globally, and drop in five separate page concepts with their own visual systems.
